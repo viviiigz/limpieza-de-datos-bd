@@ -1,0 +1,1877 @@
+[
+  {
+    "fecha": "2019-10-01",
+    "provincia": "Nacional",
+    "tasa_desocupacion": 0.058
+  },
+  {
+    "fecha": "2019-10-01",
+    "provincia": "Ciudad Autónoma de Buenos Aires",
+    "tasa_desocupacion": 0.04
+  },
+  {
+    "fecha": "2019-10-01",
+    "provincia": "Buenos Aires",
+    "tasa_desocupacion": 0.068
+  },
+  {
+    "fecha": "2019-10-01",
+    "provincia": "Catamarca",
+    "tasa_desocupacion": 0.08
+  },
+  {
+    "fecha": "2019-10-01",
+    "provincia": "Córdoba",
+    "tasa_desocupacion": 0.072
+  },
+  {
+    "fecha": "2019-10-01",
+    "provincia": "Corrientes",
+    "tasa_desocupacion": 0.01
+  },
+  {
+    "fecha": "2019-10-01",
+    "provincia": "Chaco",
+    "tasa_desocupacion": 0.056
+  },
+  {
+    "fecha": "2019-10-01",
+    "provincia": "Chubut",
+    "tasa_desocupacion": 0.03
+  },
+  {
+    "fecha": "2019-10-01",
+    "provincia": "Entre Ríos",
+    "tasa_desocupacion": 0.055
+  },
+  {
+    "fecha": "2019-10-01",
+    "provincia": "Formosa",
+    "tasa_desocupacion": 0.031
+  },
+  {
+    "fecha": "2019-10-01",
+    "provincia": "Jujuy",
+    "tasa_desocupacion": 0.062
+  },
+  {
+    "fecha": "2019-10-01",
+    "provincia": "La Pampa",
+    "tasa_desocupacion": 0.084
+  },
+  {
+    "fecha": "2019-10-01",
+    "provincia": "La Rioja",
+    "tasa_desocupacion": 0.014
+  },
+  {
+    "fecha": "2019-10-01",
+    "provincia": "Mendoza",
+    "tasa_desocupacion": 0.035
+  },
+  {
+    "fecha": "2019-10-01",
+    "provincia": "Misiones",
+    "tasa_desocupacion": 0.01
+  },
+  {
+    "fecha": "2019-10-01",
+    "provincia": "Neuquén",
+    "tasa_desocupacion": 0.051
+  },
+  {
+    "fecha": "2019-10-01",
+    "provincia": "Río Negro",
+    "tasa_desocupacion": 0.019
+  },
+  {
+    "fecha": "2019-10-01",
+    "provincia": "Salta",
+    "tasa_desocupacion": 0.083
+  },
+  {
+    "fecha": "2019-10-01",
+    "provincia": "San Juan",
+    "tasa_desocupacion": 0.02
+  },
+  {
+    "fecha": "2019-10-01",
+    "provincia": "San Luis",
+    "tasa_desocupacion": 0.028
+  },
+  {
+    "fecha": "2019-10-01",
+    "provincia": "Santa Cruz",
+    "tasa_desocupacion": 0.054
+  },
+  {
+    "fecha": "2019-10-01",
+    "provincia": "Santa Fe",
+    "tasa_desocupacion": 0.036
+  },
+  {
+    "fecha": "2019-10-01",
+    "provincia": "Santiago del Estero",
+    "tasa_desocupacion": 0.042
+  },
+  {
+    "fecha": "2019-10-01",
+    "provincia": "Tucumán",
+    "tasa_desocupacion": 0.101
+  },
+  {
+    "fecha": "2019-10-01",
+    "provincia": "Tierra del Fuego, Antártida e Islas del Atlántico Sur",
+    "tasa_desocupacion": 0.064
+  },
+  {
+    "fecha": "2020-01-01",
+    "provincia": "Nacional",
+    "tasa_desocupacion": 0.076
+  },
+  {
+    "fecha": "2020-01-01",
+    "provincia": "Ciudad Autónoma de Buenos Aires",
+    "tasa_desocupacion": 0.07
+  },
+  {
+    "fecha": "2020-01-01",
+    "provincia": "Buenos Aires",
+    "tasa_desocupacion": 0.082
+  },
+  {
+    "fecha": "2020-01-01",
+    "provincia": "Catamarca",
+    "tasa_desocupacion": 0.058
+  },
+  {
+    "fecha": "2020-01-01",
+    "provincia": "Córdoba",
+    "tasa_desocupacion": 0.129
+  },
+  {
+    "fecha": "2020-01-01",
+    "provincia": "Corrientes",
+    "tasa_desocupacion": 0.072
+  },
+  {
+    "fecha": "2020-01-01",
+    "provincia": "Chaco",
+    "tasa_desocupacion": 0.058
+  },
+  {
+    "fecha": "2020-01-01",
+    "provincia": "Chubut",
+    "tasa_desocupacion": 0.051
+  },
+  {
+    "fecha": "2020-01-01",
+    "provincia": "Entre Ríos",
+    "tasa_desocupacion": 0.05
+  },
+  {
+    "fecha": "2020-01-01",
+    "provincia": "Formosa",
+    "tasa_desocupacion": 0.049
+  },
+  {
+    "fecha": "2020-01-01",
+    "provincia": "Jujuy",
+    "tasa_desocupacion": 0.068
+  },
+  {
+    "fecha": "2020-01-01",
+    "provincia": "La Pampa",
+    "tasa_desocupacion": 0.111
+  },
+  {
+    "fecha": "2020-01-01",
+    "provincia": "La Rioja",
+    "tasa_desocupacion": 0.013
+  },
+  {
+    "fecha": "2020-01-01",
+    "provincia": "Mendoza",
+    "tasa_desocupacion": 0.062
+  },
+  {
+    "fecha": "2020-01-01",
+    "provincia": "Misiones",
+    "tasa_desocupacion": 0
+  },
+  {
+    "fecha": "2020-01-01",
+    "provincia": "Neuquén",
+    "tasa_desocupacion": 0.023
+  },
+  {
+    "fecha": "2020-01-01",
+    "provincia": "Río Negro",
+    "tasa_desocupacion": 0.018
+  },
+  {
+    "fecha": "2020-01-01",
+    "provincia": "Salta",
+    "tasa_desocupacion": 0.059
+  },
+  {
+    "fecha": "2020-01-01",
+    "provincia": "San Juan",
+    "tasa_desocupacion": 0.021
+  },
+  {
+    "fecha": "2020-01-01",
+    "provincia": "San Luis",
+    "tasa_desocupacion": 0.011
+  },
+  {
+    "fecha": "2020-01-01",
+    "provincia": "Santa Cruz",
+    "tasa_desocupacion": 0.014
+  },
+  {
+    "fecha": "2020-01-01",
+    "provincia": "Santa Fe",
+    "tasa_desocupacion": 0.088
+  },
+  {
+    "fecha": "2020-01-01",
+    "provincia": "Santiago del Estero",
+    "tasa_desocupacion": 0.035
+  },
+  {
+    "fecha": "2020-01-01",
+    "provincia": "Tucumán",
+    "tasa_desocupacion": 0.063
+  },
+  {
+    "fecha": "2020-01-01",
+    "provincia": "Tierra del Fuego, Antártida e Islas del Atlántico Sur",
+    "tasa_desocupacion": 0.074
+  },
+  {
+    "fecha": "2020-04-01",
+    "provincia": "Nacional",
+    "tasa_desocupacion": 0.09
+  },
+  {
+    "fecha": "2020-04-01",
+    "provincia": "Ciudad Autónoma de Buenos Aires",
+    "tasa_desocupacion": 0.088
+  },
+  {
+    "fecha": "2020-04-01",
+    "provincia": "Buenos Aires",
+    "tasa_desocupacion": 0.081
+  },
+  {
+    "fecha": "2020-04-01",
+    "provincia": "Catamarca",
+    "tasa_desocupacion": 0.061
+  },
+  {
+    "fecha": "2020-04-01",
+    "provincia": "Córdoba",
+    "tasa_desocupacion": 0.168
+  },
+  {
+    "fecha": "2020-04-01",
+    "provincia": "Corrientes",
+    "tasa_desocupacion": 0.106
+  },
+  {
+    "fecha": "2020-04-01",
+    "provincia": "Chaco",
+    "tasa_desocupacion": 0
+  },
+  {
+    "fecha": "2020-04-01",
+    "provincia": "Chubut",
+    "tasa_desocupacion": 0.084
+  },
+  {
+    "fecha": "2020-04-01",
+    "provincia": "Entre Ríos",
+    "tasa_desocupacion": 0.075
+  },
+  {
+    "fecha": "2020-04-01",
+    "provincia": "Formosa",
+    "tasa_desocupacion": 0.01
+  },
+  {
+    "fecha": "2020-04-01",
+    "provincia": "Jujuy",
+    "tasa_desocupacion": 0.013
+  },
+  {
+    "fecha": "2020-04-01",
+    "provincia": "La Pampa",
+    "tasa_desocupacion": 0.021
+  },
+  {
+    "fecha": "2020-04-01",
+    "provincia": "La Rioja",
+    "tasa_desocupacion": 0
+  },
+  {
+    "fecha": "2020-04-01",
+    "provincia": "Mendoza",
+    "tasa_desocupacion": 0.135
+  },
+  {
+    "fecha": "2020-04-01",
+    "provincia": "Misiones",
+    "tasa_desocupacion": 0
+  },
+  {
+    "fecha": "2020-04-01",
+    "provincia": "Neuquén",
+    "tasa_desocupacion": 0.075
+  },
+  {
+    "fecha": "2020-04-01",
+    "provincia": "Río Negro",
+    "tasa_desocupacion": 0.018
+  },
+  {
+    "fecha": "2020-04-01",
+    "provincia": "Salta",
+    "tasa_desocupacion": 0.078
+  },
+  {
+    "fecha": "2020-04-01",
+    "provincia": "San Juan",
+    "tasa_desocupacion": 0.075
+  },
+  {
+    "fecha": "2020-04-01",
+    "provincia": "San Luis",
+    "tasa_desocupacion": 0.019
+  },
+  {
+    "fecha": "2020-04-01",
+    "provincia": "Santa Cruz",
+    "tasa_desocupacion": 0.026
+  },
+  {
+    "fecha": "2020-04-01",
+    "provincia": "Santa Fe",
+    "tasa_desocupacion": 0.165
+  },
+  {
+    "fecha": "2020-04-01",
+    "provincia": "Santiago del Estero",
+    "tasa_desocupacion": 0.008
+  },
+  {
+    "fecha": "2020-04-01",
+    "provincia": "Tucumán",
+    "tasa_desocupacion": 0.098
+  },
+  {
+    "fecha": "2020-04-01",
+    "provincia": "Tierra del Fuego, Antártida e Islas del Atlántico Sur",
+    "tasa_desocupacion": 0.128
+  },
+  {
+    "fecha": "2020-07-01",
+    "provincia": "Nacional",
+    "tasa_desocupacion": 0.089
+  },
+  {
+    "fecha": "2020-07-01",
+    "provincia": "Ciudad Autónoma de Buenos Aires",
+    "tasa_desocupacion": 0.045
+  },
+  {
+    "fecha": "2020-07-01",
+    "provincia": "Buenos Aires",
+    "tasa_desocupacion": 0.125
+  },
+  {
+    "fecha": "2020-07-01",
+    "provincia": "Catamarca",
+    "tasa_desocupacion": 0.017
+  },
+  {
+    "fecha": "2020-07-01",
+    "provincia": "Córdoba",
+    "tasa_desocupacion": 0.12
+  },
+  {
+    "fecha": "2020-07-01",
+    "provincia": "Corrientes",
+    "tasa_desocupacion": 0.061
+  },
+  {
+    "fecha": "2020-07-01",
+    "provincia": "Chaco",
+    "tasa_desocupacion": 0.023
+  },
+  {
+    "fecha": "2020-07-01",
+    "provincia": "Chubut",
+    "tasa_desocupacion": 0.024
+  },
+  {
+    "fecha": "2020-07-01",
+    "provincia": "Entre Ríos",
+    "tasa_desocupacion": 0.076
+  },
+  {
+    "fecha": "2020-07-01",
+    "provincia": "Formosa",
+    "tasa_desocupacion": 0.034
+  },
+  {
+    "fecha": "2020-07-01",
+    "provincia": "Jujuy",
+    "tasa_desocupacion": 0.069
+  },
+  {
+    "fecha": "2020-07-01",
+    "provincia": "La Pampa",
+    "tasa_desocupacion": 0.076
+  },
+  {
+    "fecha": "2020-07-01",
+    "provincia": "La Rioja",
+    "tasa_desocupacion": 0.016
+  },
+  {
+    "fecha": "2020-07-01",
+    "provincia": "Mendoza",
+    "tasa_desocupacion": 0.074
+  },
+  {
+    "fecha": "2020-07-01",
+    "provincia": "Misiones",
+    "tasa_desocupacion": 0.067
+  },
+  {
+    "fecha": "2020-07-01",
+    "provincia": "Neuquén",
+    "tasa_desocupacion": 0.02
+  },
+  {
+    "fecha": "2020-07-01",
+    "provincia": "Río Negro",
+    "tasa_desocupacion": 0.01
+  },
+  {
+    "fecha": "2020-07-01",
+    "provincia": "Salta",
+    "tasa_desocupacion": 0.065
+  },
+  {
+    "fecha": "2020-07-01",
+    "provincia": "San Juan",
+    "tasa_desocupacion": 0.059
+  },
+  {
+    "fecha": "2020-07-01",
+    "provincia": "San Luis",
+    "tasa_desocupacion": 0.014
+  },
+  {
+    "fecha": "2020-07-01",
+    "provincia": "Santa Cruz",
+    "tasa_desocupacion": 0
+  },
+  {
+    "fecha": "2020-07-01",
+    "provincia": "Santa Fe",
+    "tasa_desocupacion": 0.048
+  },
+  {
+    "fecha": "2020-07-01",
+    "provincia": "Santiago del Estero",
+    "tasa_desocupacion": 0
+  },
+  {
+    "fecha": "2020-07-01",
+    "provincia": "Tucumán",
+    "tasa_desocupacion": 0.13
+  },
+  {
+    "fecha": "2020-07-01",
+    "provincia": "Tierra del Fuego, Antártida e Islas del Atlántico Sur",
+    "tasa_desocupacion": 0
+  },
+  {
+    "fecha": "2020-10-01",
+    "provincia": "Nacional",
+    "tasa_desocupacion": 0.064
+  },
+  {
+    "fecha": "2020-10-01",
+    "provincia": "Ciudad Autónoma de Buenos Aires",
+    "tasa_desocupacion": 0.022
+  },
+  {
+    "fecha": "2020-10-01",
+    "provincia": "Buenos Aires",
+    "tasa_desocupacion": 0.076
+  },
+  {
+    "fecha": "2020-10-01",
+    "provincia": "Catamarca",
+    "tasa_desocupacion": 0.022
+  },
+  {
+    "fecha": "2020-10-01",
+    "provincia": "Córdoba",
+    "tasa_desocupacion": 0.126
+  },
+  {
+    "fecha": "2020-10-01",
+    "provincia": "Corrientes",
+    "tasa_desocupacion": 0.019
+  },
+  {
+    "fecha": "2020-10-01",
+    "provincia": "Chaco",
+    "tasa_desocupacion": 0
+  },
+  {
+    "fecha": "2020-10-01",
+    "provincia": "Chubut",
+    "tasa_desocupacion": 0.021
+  },
+  {
+    "fecha": "2020-10-01",
+    "provincia": "Entre Ríos",
+    "tasa_desocupacion": 0.015
+  },
+  {
+    "fecha": "2020-10-01",
+    "provincia": "Formosa",
+    "tasa_desocupacion": 0.03
+  },
+  {
+    "fecha": "2020-10-01",
+    "provincia": "Jujuy",
+    "tasa_desocupacion": 0.03
+  },
+  {
+    "fecha": "2020-10-01",
+    "provincia": "La Pampa",
+    "tasa_desocupacion": 0.155
+  },
+  {
+    "fecha": "2020-10-01",
+    "provincia": "La Rioja",
+    "tasa_desocupacion": 0.014
+  },
+  {
+    "fecha": "2020-10-01",
+    "provincia": "Mendoza",
+    "tasa_desocupacion": 0.038
+  },
+  {
+    "fecha": "2020-10-01",
+    "provincia": "Misiones",
+    "tasa_desocupacion": 0.027
+  },
+  {
+    "fecha": "2020-10-01",
+    "provincia": "Neuquén",
+    "tasa_desocupacion": 0.037
+  },
+  {
+    "fecha": "2020-10-01",
+    "provincia": "Río Negro",
+    "tasa_desocupacion": 0.062
+  },
+  {
+    "fecha": "2020-10-01",
+    "provincia": "Salta",
+    "tasa_desocupacion": 0.045
+  },
+  {
+    "fecha": "2020-10-01",
+    "provincia": "San Juan",
+    "tasa_desocupacion": 0.043
+  },
+  {
+    "fecha": "2020-10-01",
+    "provincia": "San Luis",
+    "tasa_desocupacion": 0.019
+  },
+  {
+    "fecha": "2020-10-01",
+    "provincia": "Santa Cruz",
+    "tasa_desocupacion": 0
+  },
+  {
+    "fecha": "2020-10-01",
+    "provincia": "Santa Fe",
+    "tasa_desocupacion": 0.123
+  },
+  {
+    "fecha": "2020-10-01",
+    "provincia": "Santiago del Estero",
+    "tasa_desocupacion": 0.029
+  },
+  {
+    "fecha": "2020-10-01",
+    "provincia": "Tucumán",
+    "tasa_desocupacion": 0.091
+  },
+  {
+    "fecha": "2020-10-01",
+    "provincia": "Tierra del Fuego, Antártida e Islas del Atlántico Sur",
+    "tasa_desocupacion": 0.065
+  },
+  {
+    "fecha": "2021-01-01",
+    "provincia": "Nacional",
+    "tasa_desocupacion": 0.076
+  },
+  {
+    "fecha": "2021-01-01",
+    "provincia": "Ciudad Autónoma de Buenos Aires",
+    "tasa_desocupacion": 0.067
+  },
+  {
+    "fecha": "2021-01-01",
+    "provincia": "Buenos Aires",
+    "tasa_desocupacion": 0.085
+  },
+  {
+    "fecha": "2021-01-01",
+    "provincia": "Catamarca",
+    "tasa_desocupacion": 0.024
+  },
+  {
+    "fecha": "2021-01-01",
+    "provincia": "Córdoba",
+    "tasa_desocupacion": 0.104
+  },
+  {
+    "fecha": "2021-01-01",
+    "provincia": "Corrientes",
+    "tasa_desocupacion": 0.085
+  },
+  {
+    "fecha": "2021-01-01",
+    "provincia": "Chaco",
+    "tasa_desocupacion": 0.018
+  },
+  {
+    "fecha": "2021-01-01",
+    "provincia": "Chubut",
+    "tasa_desocupacion": 0.027
+  },
+  {
+    "fecha": "2021-01-01",
+    "provincia": "Entre Ríos",
+    "tasa_desocupacion": 0.049
+  },
+  {
+    "fecha": "2021-01-01",
+    "provincia": "Formosa",
+    "tasa_desocupacion": 0.015
+  },
+  {
+    "fecha": "2021-01-01",
+    "provincia": "Jujuy",
+    "tasa_desocupacion": 0.016
+  },
+  {
+    "fecha": "2021-01-01",
+    "provincia": "La Pampa",
+    "tasa_desocupacion": 0.14
+  },
+  {
+    "fecha": "2021-01-01",
+    "provincia": "La Rioja",
+    "tasa_desocupacion": 0.017
+  },
+  {
+    "fecha": "2021-01-01",
+    "provincia": "Mendoza",
+    "tasa_desocupacion": 0.061
+  },
+  {
+    "fecha": "2021-01-01",
+    "provincia": "Misiones",
+    "tasa_desocupacion": 0.048
+  },
+  {
+    "fecha": "2021-01-01",
+    "provincia": "Neuquén",
+    "tasa_desocupacion": 0.041
+  },
+  {
+    "fecha": "2021-01-01",
+    "provincia": "Río Negro",
+    "tasa_desocupacion": 0.024
+  },
+  {
+    "fecha": "2021-01-01",
+    "provincia": "Salta",
+    "tasa_desocupacion": 0.07
+  },
+  {
+    "fecha": "2021-01-01",
+    "provincia": "San Juan",
+    "tasa_desocupacion": 0.026
+  },
+  {
+    "fecha": "2021-01-01",
+    "provincia": "San Luis",
+    "tasa_desocupacion": 0.028
+  },
+  {
+    "fecha": "2021-01-01",
+    "provincia": "Santa Cruz",
+    "tasa_desocupacion": 0.052
+  },
+  {
+    "fecha": "2021-01-01",
+    "provincia": "Santa Fe",
+    "tasa_desocupacion": 0.063
+  },
+  {
+    "fecha": "2021-01-01",
+    "provincia": "Santiago del Estero",
+    "tasa_desocupacion": 0.017
+  },
+  {
+    "fecha": "2021-01-01",
+    "provincia": "Tucumán",
+    "tasa_desocupacion": 0.165
+  },
+  {
+    "fecha": "2021-01-01",
+    "provincia": "Tierra del Fuego, Antártida e Islas del Atlántico Sur",
+    "tasa_desocupacion": 0.138
+  },
+  {
+    "fecha": "2021-04-01",
+    "provincia": "Nacional",
+    "tasa_desocupacion": 0.053
+  },
+  {
+    "fecha": "2021-04-01",
+    "provincia": "Ciudad Autónoma de Buenos Aires",
+    "tasa_desocupacion": 0.026
+  },
+  {
+    "fecha": "2021-04-01",
+    "provincia": "Buenos Aires",
+    "tasa_desocupacion": 0.057
+  },
+  {
+    "fecha": "2021-04-01",
+    "provincia": "Catamarca",
+    "tasa_desocupacion": 0.025
+  },
+  {
+    "fecha": "2021-04-01",
+    "provincia": "Córdoba",
+    "tasa_desocupacion": 0.106
+  },
+  {
+    "fecha": "2021-04-01",
+    "provincia": "Corrientes",
+    "tasa_desocupacion": 0.028
+  },
+  {
+    "fecha": "2021-04-01",
+    "provincia": "Chaco",
+    "tasa_desocupacion": 0.007
+  },
+  {
+    "fecha": "2021-04-01",
+    "provincia": "Chubut",
+    "tasa_desocupacion": 0.049
+  },
+  {
+    "fecha": "2021-04-01",
+    "provincia": "Entre Ríos",
+    "tasa_desocupacion": 0.057
+  },
+  {
+    "fecha": "2021-04-01",
+    "provincia": "Formosa",
+    "tasa_desocupacion": 0.028
+  },
+  {
+    "fecha": "2021-04-01",
+    "provincia": "Jujuy",
+    "tasa_desocupacion": 0.044
+  },
+  {
+    "fecha": "2021-04-01",
+    "provincia": "La Pampa",
+    "tasa_desocupacion": 0.132
+  },
+  {
+    "fecha": "2021-04-01",
+    "provincia": "La Rioja",
+    "tasa_desocupacion": 0
+  },
+  {
+    "fecha": "2021-04-01",
+    "provincia": "Mendoza",
+    "tasa_desocupacion": 0.023
+  },
+  {
+    "fecha": "2021-04-01",
+    "provincia": "Misiones",
+    "tasa_desocupacion": 0
+  },
+  {
+    "fecha": "2021-04-01",
+    "provincia": "Neuquén",
+    "tasa_desocupacion": 0.034
+  },
+  {
+    "fecha": "2021-04-01",
+    "provincia": "Río Negro",
+    "tasa_desocupacion": 0.036
+  },
+  {
+    "fecha": "2021-04-01",
+    "provincia": "Salta",
+    "tasa_desocupacion": 0.088
+  },
+  {
+    "fecha": "2021-04-01",
+    "provincia": "San Juan",
+    "tasa_desocupacion": 0.037
+  },
+  {
+    "fecha": "2021-04-01",
+    "provincia": "San Luis",
+    "tasa_desocupacion": 0
+  },
+  {
+    "fecha": "2021-04-01",
+    "provincia": "Santa Cruz",
+    "tasa_desocupacion": 0.062
+  },
+  {
+    "fecha": "2021-04-01",
+    "provincia": "Santa Fe",
+    "tasa_desocupacion": 0.075
+  },
+  {
+    "fecha": "2021-04-01",
+    "provincia": "Santiago del Estero",
+    "tasa_desocupacion": 0.023
+  },
+  {
+    "fecha": "2021-04-01",
+    "provincia": "Tucumán",
+    "tasa_desocupacion": 0.048
+  },
+  {
+    "fecha": "2021-04-01",
+    "provincia": "Tierra del Fuego, Antártida e Islas del Atlántico Sur",
+    "tasa_desocupacion": 0.1
+  },
+  {
+    "fecha": "2021-07-01",
+    "provincia": "Nacional",
+    "tasa_desocupacion": 0.061
+  },
+  {
+    "fecha": "2021-07-01",
+    "provincia": "Ciudad Autónoma de Buenos Aires",
+    "tasa_desocupacion": 0.024
+  },
+  {
+    "fecha": "2021-07-01",
+    "provincia": "Buenos Aires",
+    "tasa_desocupacion": 0.08
+  },
+  {
+    "fecha": "2021-07-01",
+    "provincia": "Catamarca",
+    "tasa_desocupacion": 0.062
+  },
+  {
+    "fecha": "2021-07-01",
+    "provincia": "Córdoba",
+    "tasa_desocupacion": 0.088
+  },
+  {
+    "fecha": "2021-07-01",
+    "provincia": "Corrientes",
+    "tasa_desocupacion": 0.013
+  },
+  {
+    "fecha": "2021-07-01",
+    "provincia": "Chaco",
+    "tasa_desocupacion": 0.027
+  },
+  {
+    "fecha": "2021-07-01",
+    "provincia": "Chubut",
+    "tasa_desocupacion": 0.054
+  },
+  {
+    "fecha": "2021-07-01",
+    "provincia": "Entre Ríos",
+    "tasa_desocupacion": 0.043
+  },
+  {
+    "fecha": "2021-07-01",
+    "provincia": "Formosa",
+    "tasa_desocupacion": 0.016
+  },
+  {
+    "fecha": "2021-07-01",
+    "provincia": "Jujuy",
+    "tasa_desocupacion": 0.042
+  },
+  {
+    "fecha": "2021-07-01",
+    "provincia": "La Pampa",
+    "tasa_desocupacion": 0.104
+  },
+  {
+    "fecha": "2021-07-01",
+    "provincia": "La Rioja",
+    "tasa_desocupacion": 0
+  },
+  {
+    "fecha": "2021-07-01",
+    "provincia": "Mendoza",
+    "tasa_desocupacion": 0.083
+  },
+  {
+    "fecha": "2021-07-01",
+    "provincia": "Misiones",
+    "tasa_desocupacion": 0.018
+  },
+  {
+    "fecha": "2021-07-01",
+    "provincia": "Neuquén",
+    "tasa_desocupacion": 0.058
+  },
+  {
+    "fecha": "2021-07-01",
+    "provincia": "Río Negro",
+    "tasa_desocupacion": 0
+  },
+  {
+    "fecha": "2021-07-01",
+    "provincia": "Salta",
+    "tasa_desocupacion": 0.077
+  },
+  {
+    "fecha": "2021-07-01",
+    "provincia": "San Juan",
+    "tasa_desocupacion": 0.021
+  },
+  {
+    "fecha": "2021-07-01",
+    "provincia": "San Luis",
+    "tasa_desocupacion": 0.007
+  },
+  {
+    "fecha": "2021-07-01",
+    "provincia": "Santa Cruz",
+    "tasa_desocupacion": 0.056
+  },
+  {
+    "fecha": "2021-07-01",
+    "provincia": "Santa Fe",
+    "tasa_desocupacion": 0.052
+  },
+  {
+    "fecha": "2021-07-01",
+    "provincia": "Santiago del Estero",
+    "tasa_desocupacion": 0
+  },
+  {
+    "fecha": "2021-07-01",
+    "provincia": "Tucumán",
+    "tasa_desocupacion": 0.041
+  },
+  {
+    "fecha": "2021-07-01",
+    "provincia": "Tierra del Fuego, Antártida e Islas del Atlántico Sur",
+    "tasa_desocupacion": 0.013
+  },
+  {
+    "fecha": "2021-10-01",
+    "provincia": "Nacional",
+    "tasa_desocupacion": 0.06
+  },
+  {
+    "fecha": "2021-10-01",
+    "provincia": "Ciudad Autónoma de Buenos Aires",
+    "tasa_desocupacion": 0.027
+  },
+  {
+    "fecha": "2021-10-01",
+    "provincia": "Buenos Aires",
+    "tasa_desocupacion": 0.078
+  },
+  {
+    "fecha": "2021-10-01",
+    "provincia": "Catamarca",
+    "tasa_desocupacion": 0.014
+  },
+  {
+    "fecha": "2021-10-01",
+    "provincia": "Córdoba",
+    "tasa_desocupacion": 0.09
+  },
+  {
+    "fecha": "2021-10-01",
+    "provincia": "Corrientes",
+    "tasa_desocupacion": 0.013
+  },
+  {
+    "fecha": "2021-10-01",
+    "provincia": "Chaco",
+    "tasa_desocupacion": 0.033
+  },
+  {
+    "fecha": "2021-10-01",
+    "provincia": "Chubut",
+    "tasa_desocupacion": 0.033
+  },
+  {
+    "fecha": "2021-10-01",
+    "provincia": "Entre Ríos",
+    "tasa_desocupacion": 0.081
+  },
+  {
+    "fecha": "2021-10-01",
+    "provincia": "Formosa",
+    "tasa_desocupacion": 0
+  },
+  {
+    "fecha": "2021-10-01",
+    "provincia": "Jujuy",
+    "tasa_desocupacion": 0.043
+  },
+  {
+    "fecha": "2021-10-01",
+    "provincia": "La Pampa",
+    "tasa_desocupacion": 0.081
+  },
+  {
+    "fecha": "2021-10-01",
+    "provincia": "La Rioja",
+    "tasa_desocupacion": 0.021
+  },
+  {
+    "fecha": "2021-10-01",
+    "provincia": "Mendoza",
+    "tasa_desocupacion": 0.03
+  },
+  {
+    "fecha": "2021-10-01",
+    "provincia": "Misiones",
+    "tasa_desocupacion": 0
+  },
+  {
+    "fecha": "2021-10-01",
+    "provincia": "Neuquén",
+    "tasa_desocupacion": 0.038
+  },
+  {
+    "fecha": "2021-10-01",
+    "provincia": "Río Negro",
+    "tasa_desocupacion": 0.042
+  },
+  {
+    "fecha": "2021-10-01",
+    "provincia": "Salta",
+    "tasa_desocupacion": 0.055
+  },
+  {
+    "fecha": "2021-10-01",
+    "provincia": "San Juan",
+    "tasa_desocupacion": 0.071
+  },
+  {
+    "fecha": "2021-10-01",
+    "provincia": "San Luis",
+    "tasa_desocupacion": 0.009
+  },
+  {
+    "fecha": "2021-10-01",
+    "provincia": "Santa Cruz",
+    "tasa_desocupacion": 0.026
+  },
+  {
+    "fecha": "2021-10-01",
+    "provincia": "Santa Fe",
+    "tasa_desocupacion": 0.054
+  },
+  {
+    "fecha": "2021-10-01",
+    "provincia": "Santiago del Estero",
+    "tasa_desocupacion": 0.002
+  },
+  {
+    "fecha": "2021-10-01",
+    "provincia": "Tucumán",
+    "tasa_desocupacion": 0.017
+  },
+  {
+    "fecha": "2021-10-01",
+    "provincia": "Tierra del Fuego, Antártida e Islas del Atlántico Sur",
+    "tasa_desocupacion": 0.016
+  },
+  {
+    "fecha": "2022-01-01",
+    "provincia": "Nacional",
+    "tasa_desocupacion": 0.044
+  },
+  {
+    "fecha": "2022-01-01",
+    "provincia": "Ciudad Autónoma de Buenos Aires",
+    "tasa_desocupacion": 0.019
+  },
+  {
+    "fecha": "2022-01-01",
+    "provincia": "Buenos Aires",
+    "tasa_desocupacion": 0.047
+  },
+  {
+    "fecha": "2022-01-01",
+    "provincia": "Catamarca",
+    "tasa_desocupacion": 0.026
+  },
+  {
+    "fecha": "2022-01-01",
+    "provincia": "Córdoba",
+    "tasa_desocupacion": 0.095
+  },
+  {
+    "fecha": "2022-01-01",
+    "provincia": "Corrientes",
+    "tasa_desocupacion": 0.029
+  },
+  {
+    "fecha": "2022-01-01",
+    "provincia": "Chaco",
+    "tasa_desocupacion": 0.036
+  },
+  {
+    "fecha": "2022-01-01",
+    "provincia": "Chubut",
+    "tasa_desocupacion": 0.026
+  },
+  {
+    "fecha": "2022-01-01",
+    "provincia": "Entre Ríos",
+    "tasa_desocupacion": 0.052
+  },
+  {
+    "fecha": "2022-01-01",
+    "provincia": "Formosa",
+    "tasa_desocupacion": 0
+  },
+  {
+    "fecha": "2022-01-01",
+    "provincia": "Jujuy",
+    "tasa_desocupacion": 0.011
+  },
+  {
+    "fecha": "2022-01-01",
+    "provincia": "La Pampa",
+    "tasa_desocupacion": 0.075
+  },
+  {
+    "fecha": "2022-01-01",
+    "provincia": "La Rioja",
+    "tasa_desocupacion": 0.01
+  },
+  {
+    "fecha": "2022-01-01",
+    "provincia": "Mendoza",
+    "tasa_desocupacion": 0.039
+  },
+  {
+    "fecha": "2022-01-01",
+    "provincia": "Misiones",
+    "tasa_desocupacion": 0.037
+  },
+  {
+    "fecha": "2022-01-01",
+    "provincia": "Neuquén",
+    "tasa_desocupacion": 0.031
+  },
+  {
+    "fecha": "2022-01-01",
+    "provincia": "Río Negro",
+    "tasa_desocupacion": 0.006
+  },
+  {
+    "fecha": "2022-01-01",
+    "provincia": "Salta",
+    "tasa_desocupacion": 0.029
+  },
+  {
+    "fecha": "2022-01-01",
+    "provincia": "San Juan",
+    "tasa_desocupacion": 0.05
+  },
+  {
+    "fecha": "2022-01-01",
+    "provincia": "San Luis",
+    "tasa_desocupacion": 0.016
+  },
+  {
+    "fecha": "2022-01-01",
+    "provincia": "Santa Cruz",
+    "tasa_desocupacion": 0.042
+  },
+  {
+    "fecha": "2022-01-01",
+    "provincia": "Santa Fe",
+    "tasa_desocupacion": 0.047
+  },
+  {
+    "fecha": "2022-01-01",
+    "provincia": "Santiago del Estero",
+    "tasa_desocupacion": 0.021
+  },
+  {
+    "fecha": "2022-01-01",
+    "provincia": "Tucumán",
+    "tasa_desocupacion": 0.087
+  },
+  {
+    "fecha": "2022-01-01",
+    "provincia": "Tierra del Fuego, Antártida e Islas del Atlántico Sur",
+    "tasa_desocupacion": 0.035
+  },
+  {
+    "fecha": "2022-04-01",
+    "provincia": "Nacional",
+    "tasa_desocupacion": 0.05
+  },
+  {
+    "fecha": "2022-04-01",
+    "provincia": "Ciudad Autónoma de Buenos Aires",
+    "tasa_desocupacion": 0.021
+  },
+  {
+    "fecha": "2022-04-01",
+    "provincia": "Buenos Aires",
+    "tasa_desocupacion": 0.056
+  },
+  {
+    "fecha": "2022-04-01",
+    "provincia": "Catamarca",
+    "tasa_desocupacion": 0.065
+  },
+  {
+    "fecha": "2022-04-01",
+    "provincia": "Córdoba",
+    "tasa_desocupacion": 0.092
+  },
+  {
+    "fecha": "2022-04-01",
+    "provincia": "Corrientes",
+    "tasa_desocupacion": 0.016
+  },
+  {
+    "fecha": "2022-04-01",
+    "provincia": "Chaco",
+    "tasa_desocupacion": 0.088
+  },
+  {
+    "fecha": "2022-04-01",
+    "provincia": "Chubut",
+    "tasa_desocupacion": 0.035
+  },
+  {
+    "fecha": "2022-04-01",
+    "provincia": "Entre Ríos",
+    "tasa_desocupacion": 0.044
+  },
+  {
+    "fecha": "2022-04-01",
+    "provincia": "Formosa",
+    "tasa_desocupacion": 0
+  },
+  {
+    "fecha": "2022-04-01",
+    "provincia": "Jujuy",
+    "tasa_desocupacion": 0.023
+  },
+  {
+    "fecha": "2022-04-01",
+    "provincia": "La Pampa",
+    "tasa_desocupacion": 0.072
+  },
+  {
+    "fecha": "2022-04-01",
+    "provincia": "La Rioja",
+    "tasa_desocupacion": 0
+  },
+  {
+    "fecha": "2022-04-01",
+    "provincia": "Mendoza",
+    "tasa_desocupacion": 0.048
+  },
+  {
+    "fecha": "2022-04-01",
+    "provincia": "Misiones",
+    "tasa_desocupacion": 0.026
+  },
+  {
+    "fecha": "2022-04-01",
+    "provincia": "Neuquén",
+    "tasa_desocupacion": 0.058
+  },
+  {
+    "fecha": "2022-04-01",
+    "provincia": "Río Negro",
+    "tasa_desocupacion": 0
+  },
+  {
+    "fecha": "2022-04-01",
+    "provincia": "Salta",
+    "tasa_desocupacion": 0.044
+  },
+  {
+    "fecha": "2022-04-01",
+    "provincia": "San Juan",
+    "tasa_desocupacion": 0.022
+  },
+  {
+    "fecha": "2022-04-01",
+    "provincia": "San Luis",
+    "tasa_desocupacion": 0.038
+  },
+  {
+    "fecha": "2022-04-01",
+    "provincia": "Santa Cruz",
+    "tasa_desocupacion": 0.044
+  },
+  {
+    "fecha": "2022-04-01",
+    "provincia": "Santa Fe",
+    "tasa_desocupacion": 0.047
+  },
+  {
+    "fecha": "2022-04-01",
+    "provincia": "Santiago del Estero",
+    "tasa_desocupacion": 0.008
+  },
+  {
+    "fecha": "2022-04-01",
+    "provincia": "Tucumán",
+    "tasa_desocupacion": 0.061
+  },
+  {
+    "fecha": "2022-04-01",
+    "provincia": "Tierra del Fuego, Antártida e Islas del Atlántico Sur",
+    "tasa_desocupacion": 0.049
+  },
+  {
+    "fecha": "2022-07-01",
+    "provincia": "Nacional",
+    "tasa_desocupacion": 0.056
+  },
+  {
+    "fecha": "2022-07-01",
+    "provincia": "Ciudad Autónoma de Buenos Aires",
+    "tasa_desocupacion": 0.02
+  },
+  {
+    "fecha": "2022-07-01",
+    "provincia": "Buenos Aires",
+    "tasa_desocupacion": 0.074
+  },
+  {
+    "fecha": "2022-07-01",
+    "provincia": "Catamarca",
+    "tasa_desocupacion": 0.074
+  },
+  {
+    "fecha": "2022-07-01",
+    "provincia": "Córdoba",
+    "tasa_desocupacion": 0.067
+  },
+  {
+    "fecha": "2022-07-01",
+    "provincia": "Corrientes",
+    "tasa_desocupacion": 0.01
+  },
+  {
+    "fecha": "2022-07-01",
+    "provincia": "Chaco",
+    "tasa_desocupacion": 0.065
+  },
+  {
+    "fecha": "2022-07-01",
+    "provincia": "Chubut",
+    "tasa_desocupacion": 0.019
+  },
+  {
+    "fecha": "2022-07-01",
+    "provincia": "Entre Ríos",
+    "tasa_desocupacion": 0.036
+  },
+  {
+    "fecha": "2022-07-01",
+    "provincia": "Formosa",
+    "tasa_desocupacion": 0
+  },
+  {
+    "fecha": "2022-07-01",
+    "provincia": "Jujuy",
+    "tasa_desocupacion": 0.024
+  },
+  {
+    "fecha": "2022-07-01",
+    "provincia": "La Pampa",
+    "tasa_desocupacion": 0.071
+  },
+  {
+    "fecha": "2022-07-01",
+    "provincia": "La Rioja",
+    "tasa_desocupacion": 0.042
+  },
+  {
+    "fecha": "2022-07-01",
+    "provincia": "Mendoza",
+    "tasa_desocupacion": 0.045
+  },
+  {
+    "fecha": "2022-07-01",
+    "provincia": "Misiones",
+    "tasa_desocupacion": 0.023
+  },
+  {
+    "fecha": "2022-07-01",
+    "provincia": "Neuquén",
+    "tasa_desocupacion": 0.027
+  },
+  {
+    "fecha": "2022-07-01",
+    "provincia": "Río Negro",
+    "tasa_desocupacion": 0
+  },
+  {
+    "fecha": "2022-07-01",
+    "provincia": "Salta",
+    "tasa_desocupacion": 0.043
+  },
+  {
+    "fecha": "2022-07-01",
+    "provincia": "San Juan",
+    "tasa_desocupacion": 0.051
+  },
+  {
+    "fecha": "2022-07-01",
+    "provincia": "San Luis",
+    "tasa_desocupacion": 0.021
+  },
+  {
+    "fecha": "2022-07-01",
+    "provincia": "Santa Cruz",
+    "tasa_desocupacion": 0.06
+  },
+  {
+    "fecha": "2022-07-01",
+    "provincia": "Santa Fe",
+    "tasa_desocupacion": 0.06
+  },
+  {
+    "fecha": "2022-07-01",
+    "provincia": "Santiago del Estero",
+    "tasa_desocupacion": 0
+  },
+  {
+    "fecha": "2022-07-01",
+    "provincia": "Tucumán",
+    "tasa_desocupacion": 0.05
+  },
+  {
+    "fecha": "2022-07-01",
+    "provincia": "Tierra del Fuego, Antártida e Islas del Atlántico Sur",
+    "tasa_desocupacion": 0.058
+  },
+  {
+    "fecha": "2022-10-01",
+    "provincia": "Nacional",
+    "tasa_desocupacion": 0.043
+  },
+  {
+    "fecha": "2022-10-01",
+    "provincia": "Ciudad Autónoma de Buenos Aires",
+    "tasa_desocupacion": 0.027
+  },
+  {
+    "fecha": "2022-10-01",
+    "provincia": "Buenos Aires",
+    "tasa_desocupacion": 0.049
+  },
+  {
+    "fecha": "2022-10-01",
+    "provincia": "Catamarca",
+    "tasa_desocupacion": 0.032
+  },
+  {
+    "fecha": "2022-10-01",
+    "provincia": "Córdoba",
+    "tasa_desocupacion": 0.063
+  },
+  {
+    "fecha": "2022-10-01",
+    "provincia": "Corrientes",
+    "tasa_desocupacion": 0.018
+  },
+  {
+    "fecha": "2022-10-01",
+    "provincia": "Chaco",
+    "tasa_desocupacion": 0.019
+  },
+  {
+    "fecha": "2022-10-01",
+    "provincia": "Chubut",
+    "tasa_desocupacion": 0.034
+  },
+  {
+    "fecha": "2022-10-01",
+    "provincia": "Entre Ríos",
+    "tasa_desocupacion": 0.02
+  },
+  {
+    "fecha": "2022-10-01",
+    "provincia": "Formosa",
+    "tasa_desocupacion": 0.027
+  },
+  {
+    "fecha": "2022-10-01",
+    "provincia": "Jujuy",
+    "tasa_desocupacion": 0.023
+  },
+  {
+    "fecha": "2022-10-01",
+    "provincia": "La Pampa",
+    "tasa_desocupacion": 0.039
+  },
+  {
+    "fecha": "2022-10-01",
+    "provincia": "La Rioja",
+    "tasa_desocupacion": 0.037
+  },
+  {
+    "fecha": "2022-10-01",
+    "provincia": "Mendoza",
+    "tasa_desocupacion": 0.061
+  },
+  {
+    "fecha": "2022-10-01",
+    "provincia": "Misiones",
+    "tasa_desocupacion": 0.026
+  },
+  {
+    "fecha": "2022-10-01",
+    "provincia": "Neuquén",
+    "tasa_desocupacion": 0.052
+  },
+  {
+    "fecha": "2022-10-01",
+    "provincia": "Río Negro",
+    "tasa_desocupacion": 0.009
+  },
+  {
+    "fecha": "2022-10-01",
+    "provincia": "Salta",
+    "tasa_desocupacion": 0.05
+  },
+  {
+    "fecha": "2022-10-01",
+    "provincia": "San Juan",
+    "tasa_desocupacion": 0.023
+  },
+  {
+    "fecha": "2022-10-01",
+    "provincia": "San Luis",
+    "tasa_desocupacion": 0.017
+  },
+  {
+    "fecha": "2022-10-01",
+    "provincia": "Santa Cruz",
+    "tasa_desocupacion": 0.022
+  },
+  {
+    "fecha": "2022-10-01",
+    "provincia": "Santa Fe",
+    "tasa_desocupacion": 0.05
+  },
+  {
+    "fecha": "2022-10-01",
+    "provincia": "Santiago del Estero",
+    "tasa_desocupacion": 0.006
+  },
+  {
+    "fecha": "2022-10-01",
+    "provincia": "Tucumán",
+    "tasa_desocupacion": 0.041
+  },
+  {
+    "fecha": "2022-10-01",
+    "provincia": "Tierra del Fuego, Antártida e Islas del Atlántico Sur",
+    "tasa_desocupacion": 0.023
+  },
+  {
+    "fecha": "2023-01-01",
+    "provincia": "Nacional",
+    "tasa_desocupacion": 0.046
+  },
+  {
+    "fecha": "2023-01-01",
+    "provincia": "Ciudad Autónoma de Buenos Aires",
+    "tasa_desocupacion": 0.007
+  },
+  {
+    "fecha": "2023-01-01",
+    "provincia": "Buenos Aires",
+    "tasa_desocupacion": 0.059
+  },
+  {
+    "fecha": "2023-01-01",
+    "provincia": "Catamarca",
+    "tasa_desocupacion": 0.03
+  },
+  {
+    "fecha": "2023-01-01",
+    "provincia": "Córdoba",
+    "tasa_desocupacion": 0.073
+  },
+  {
+    "fecha": "2023-01-01",
+    "provincia": "Corrientes",
+    "tasa_desocupacion": 0.047
+  },
+  {
+    "fecha": "2023-01-01",
+    "provincia": "Chaco",
+    "tasa_desocupacion": 0.017
+  },
+  {
+    "fecha": "2023-01-01",
+    "provincia": "Chubut",
+    "tasa_desocupacion": 0.054
+  },
+  {
+    "fecha": "2023-01-01",
+    "provincia": "Entre Ríos",
+    "tasa_desocupacion": 0.044
+  },
+  {
+    "fecha": "2023-01-01",
+    "provincia": "Formosa",
+    "tasa_desocupacion": 0
+  },
+  {
+    "fecha": "2023-01-01",
+    "provincia": "Jujuy",
+    "tasa_desocupacion": 0.009
+  },
+  {
+    "fecha": "2023-01-01",
+    "provincia": "La Pampa",
+    "tasa_desocupacion": 0.07
+  },
+  {
+    "fecha": "2023-01-01",
+    "provincia": "La Rioja",
+    "tasa_desocupacion": 0.007
+  },
+  {
+    "fecha": "2023-01-01",
+    "provincia": "Mendoza",
+    "tasa_desocupacion": 0.032
+  },
+  {
+    "fecha": "2023-01-01",
+    "provincia": "Misiones",
+    "tasa_desocupacion": 0.021
+  },
+  {
+    "fecha": "2023-01-01",
+    "provincia": "Neuquén",
+    "tasa_desocupacion": 0.049
+  },
+  {
+    "fecha": "2023-01-01",
+    "provincia": "Río Negro",
+    "tasa_desocupacion": 0.011
+  },
+  {
+    "fecha": "2023-01-01",
+    "provincia": "Salta",
+    "tasa_desocupacion": 0.036
+  },
+  {
+    "fecha": "2023-01-01",
+    "provincia": "San Juan",
+    "tasa_desocupacion": 0.035
+  },
+  {
+    "fecha": "2023-01-01",
+    "provincia": "San Luis",
+    "tasa_desocupacion": 0.021
+  },
+  {
+    "fecha": "2023-01-01",
+    "provincia": "Santa Cruz",
+    "tasa_desocupacion": 0.017
+  },
+  {
+    "fecha": "2023-01-01",
+    "provincia": "Santa Fe",
+    "tasa_desocupacion": 0.056
+  },
+  {
+    "fecha": "2023-01-01",
+    "provincia": "Santiago del Estero",
+    "tasa_desocupacion": 0
+  },
+  {
+    "fecha": "2023-01-01",
+    "provincia": "Tucumán",
+    "tasa_desocupacion": 0.028
+  },
+  {
+    "fecha": "2023-01-01",
+    "provincia": "Tierra del Fuego, Antártida e Islas del Atlántico Sur",
+    "tasa_desocupacion": 0
+  },
+  {
+    "fecha": "2023-04-01",
+    "provincia": "Nacional",
+    "tasa_desocupacion": 0.048
+  },
+  {
+    "fecha": "2023-04-01",
+    "provincia": "Ciudad Autónoma de Buenos Aires",
+    "tasa_desocupacion": 0.022
+  },
+  {
+    "fecha": "2023-04-01",
+    "provincia": "Buenos Aires",
+    "tasa_desocupacion": 0.062
+  },
+  {
+    "fecha": "2023-04-01",
+    "provincia": "Catamarca",
+    "tasa_desocupacion": 0.011
+  },
+  {
+    "fecha": "2023-04-01",
+    "provincia": "Córdoba",
+    "tasa_desocupacion": 0.06
+  },
+  {
+    "fecha": "2023-04-01",
+    "provincia": "Corrientes",
+    "tasa_desocupacion": 0.027
+  },
+  {
+    "fecha": "2023-04-01",
+    "provincia": "Chaco",
+    "tasa_desocupacion": 0.03
+  },
+  {
+    "fecha": "2023-04-01",
+    "provincia": "Chubut",
+    "tasa_desocupacion": 0.038
+  },
+  {
+    "fecha": "2023-04-01",
+    "provincia": "Entre Ríos",
+    "tasa_desocupacion": 0.052
+  },
+  {
+    "fecha": "2023-04-01",
+    "provincia": "Formosa",
+    "tasa_desocupacion": 0
+  },
+  {
+    "fecha": "2023-04-01",
+    "provincia": "Jujuy",
+    "tasa_desocupacion": 0.014
+  },
+  {
+    "fecha": "2023-04-01",
+    "provincia": "La Pampa",
+    "tasa_desocupacion": 0.079
+  },
+  {
+    "fecha": "2023-04-01",
+    "provincia": "La Rioja",
+    "tasa_desocupacion": 0
+  },
+  {
+    "fecha": "2023-04-01",
+    "provincia": "Mendoza",
+    "tasa_desocupacion": 0.048
+  },
+  {
+    "fecha": "2023-04-01",
+    "provincia": "Misiones",
+    "tasa_desocupacion": 0.067
+  },
+  {
+    "fecha": "2023-04-01",
+    "provincia": "Neuquén",
+    "tasa_desocupacion": 0.032
+  },
+  {
+    "fecha": "2023-04-01",
+    "provincia": "Río Negro",
+    "tasa_desocupacion": 0
+  },
+  {
+    "fecha": "2023-04-01",
+    "provincia": "Salta",
+    "tasa_desocupacion": 0.017
+  },
+  {
+    "fecha": "2023-04-01",
+    "provincia": "San Juan",
+    "tasa_desocupacion": 0.022
+  },
+  {
+    "fecha": "2023-04-01",
+    "provincia": "San Luis",
+    "tasa_desocupacion": 0.017
+  },
+  {
+    "fecha": "2023-04-01",
+    "provincia": "Santa Cruz",
+    "tasa_desocupacion": 0.038
+  },
+  {
+    "fecha": "2023-04-01",
+    "provincia": "Santa Fe",
+    "tasa_desocupacion": 0.048
+  },
+  {
+    "fecha": "2023-04-01",
+    "provincia": "Santiago del Estero",
+    "tasa_desocupacion": 0
+  },
+  {
+    "fecha": "2023-04-01",
+    "provincia": "Tucumán",
+    "tasa_desocupacion": 0.078
+  },
+  {
+    "fecha": "2023-04-01",
+    "provincia": "Tierra del Fuego, Antártida e Islas del Atlántico Sur",
+    "tasa_desocupacion": 0.013
+  }
+]

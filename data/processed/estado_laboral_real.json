@@ -1,0 +1,14 @@
+[
+  {
+    "condicion": "Ocupadas",
+    "cantidad_real": 3568614
+  },
+  {
+    "condicion": "Desocupadas (Buscan y no consiguen)",
+    "cantidad_real": 143915
+  },
+  {
+    "condicion": "Inactivas (No buscan por carga horaria)",
+    "cantidad_real": 2800374
+  }
+]
