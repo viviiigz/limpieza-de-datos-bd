@@ -20,7 +20,7 @@ Guarda rutas de archivos y un diccionario que traduce los nombres raros de provi
 Tiene una función que “despivotar” los datos, o sea, los pasa de formato ancho (muchas columnas, una por provincia) a formato largo (una fila por provincia y fecha). Así es mucho más fácil trabajar y graficar los datos.
 
 ### index.js
-Es el script principal para limpiar y normalizar el dataset. Lee el CSV crudo, lo transforma usando transformer.js, normaliza nombres de provincias y guarda el resultado en `datos_limpios.json`. Deja los datos listos para analizar o visualizar.
+Es el script  principal para limpiar y normalizar el dataset. Lee el CSV crudo, lo transforma usando transformer.js, normaliza nombres de provincias y guarda el resultado en `datos_limpios.json`. Deja los datos listos para analizar o visualizar.
 
 ### limpiar_eph.js
 Procesa el archivo EPH para calcular estadísticas sobre educación e informalidad de las jefas de hogar. Filtra solo mujeres jefas y cuenta cuántas hay en cada grupo. Así podés saber, por ejemplo, cuántas jefas de hogar tienen educación primaria, secundaria, etc.
