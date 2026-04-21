@@ -1,0 +1,12 @@
+[
+  {
+    "genero": "Mujeres",
+    "horas_trabajo_no_remunerado": 6.5,
+    "horas_trabajo_ocupacion": 5.5
+  },
+  {
+    "genero": "Varones",
+    "horas_trabajo_no_remunerado": 3.4,
+    "horas_trabajo_ocupacion": 7.5
+  }
+]
