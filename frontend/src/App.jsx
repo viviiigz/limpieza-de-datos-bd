@@ -28,6 +28,13 @@ function App() {
     return Array.from(allDates).sort((a, b) => new Date(a) - new Date(b));
   }, []);
 
+  const anios = useMemo(() => {
+    const years = new Set(fechas.map((fecha) => fecha.slice(0, 4)));
+    return Array.from(years).sort((a, b) => Number(a) - Number(b));
+  }, [fechas]);
+
+  const [modoTemporal, setModoTemporal] = useState('anio');
+  const [anioSeleccionado, setAnioSeleccionado] = useState(anios[anios.length - 1]);
   const [fechaSeleccionada, setFechaSeleccionada] = useState(fechas[fechas.length - 1]);
 
   const serieNacional = useMemo(() => {
@@ -36,27 +43,67 @@ function App() {
       .sort((a, b) => new Date(a.fecha) - new Date(b.fecha));
   }, []);
 
-  const provinciasFecha = useMemo(() => {
-    return datosLimpios
-      .filter((d) => d.fecha === fechaSeleccionada && d.provincia !== 'Nacional')
-      .sort((a, b) => (b.tasa_desocupacion ?? 0) - (a.tasa_desocupacion ?? 0));
-  }, [fechaSeleccionada]);
+  const provinciasPeriodo = useMemo(() => {
+    if (modoTemporal === 'trimestre') {
+      return datosLimpios
+        .filter((d) => d.fecha === fechaSeleccionada && d.provincia !== 'Nacional')
+        .sort((a, b) => (b.tasa_desocupacion ?? 0) - (a.tasa_desocupacion ?? 0));
+    }
 
-  const topProvincias = useMemo(() => provinciasFecha.slice(0, 8), [provinciasFecha]);
+    const porProvincia = new Map();
+
+    datosLimpios
+      .filter((d) => d.provincia !== 'Nacional' && d.fecha.startsWith(anioSeleccionado))
+      .forEach((d) => {
+        const tasa = Number(d.tasa_desocupacion);
+        if (Number.isNaN(tasa)) return;
+
+        const actual = porProvincia.get(d.provincia) ?? { suma: 0, cantidad: 0 };
+        porProvincia.set(d.provincia, {
+          suma: actual.suma + tasa,
+          cantidad: actual.cantidad + 1
+        });
+      });
+
+    return Array.from(porProvincia.entries())
+      .map(([provincia, agg]) => ({
+        provincia,
+        tasa_desocupacion: agg.cantidad ? agg.suma / agg.cantidad : null
+      }))
+      .sort((a, b) => (b.tasa_desocupacion ?? 0) - (a.tasa_desocupacion ?? 0));
+  }, [anioSeleccionado, fechaSeleccionada, modoTemporal]);
+
+  const tasaNacionalPeriodo = useMemo(() => {
+    if (modoTemporal === 'trimestre') {
+      return serieNacional.find((d) => d.fecha === fechaSeleccionada)?.tasa_desocupacion ?? null;
+    }
+
+    const valoresAnio = serieNacional
+      .filter((d) => d.fecha.startsWith(anioSeleccionado))
+      .map((d) => Number(d.tasa_desocupacion))
+      .filter((v) => !Number.isNaN(v));
+
+    if (!valoresAnio.length) return null;
+    return valoresAnio.reduce((acc, value) => acc + value, 0) / valoresAnio.length;
+  }, [anioSeleccionado, fechaSeleccionada, modoTemporal, serieNacional]);
+
+  const etiquetaPeriodo = modoTemporal === 'trimestre' ? fechaSeleccionada : anioSeleccionado;
+
+  const topProvincias = useMemo(() => provinciasPeriodo.slice(0, 8), [provinciasPeriodo]);
 
   const mediaFecha = useMemo(() => {
-    const valid = provinciasFecha
+    const valid = provinciasPeriodo
       .map((d) => d.tasa_desocupacion)
       .filter((v) => v != null && !Number.isNaN(v));
 
     if (!valid.length) return null;
     return valid.reduce((acc, value) => acc + value, 0) / valid.length;
-  }, [provinciasFecha]);
+  }, [provinciasPeriodo]);
 
   const maxFecha = useMemo(() => {
-    if (!provinciasFecha.length) return null;
-    return provinciasFecha[0];
-  }, [provinciasFecha]);
+    if (!provinciasPeriodo.length) return null;
+    return provinciasPeriodo[0];
+  }, [provinciasPeriodo]);
 
   const estadoData = useMemo(() => normalizeEstadoData(estadoLaboral), []);
 
@@ -86,35 +133,73 @@ function App() {
       </header>
 
       <section className="controls-panel">
-        <label htmlFor="fecha">Trimestre de analisis territorial</label>
-        <select
-          id="fecha"
-          value={fechaSeleccionada}
-          onChange={(e) => setFechaSeleccionada(e.target.value)}
-        >
-          {fechas.map((fecha) => (
-            <option key={fecha} value={fecha}>
-              {fecha}
-            </option>
-            
-          ))}
-        </select>
+        <label>Escala temporal de analisis territorial</label>
+        <div className="time-mode-row" role="radiogroup" aria-label="Escala temporal">
+          <label>
+            <input
+              type="radio"
+              name="modoTemporal"
+              value="anio"
+              checked={modoTemporal === 'anio'}
+              onChange={(e) => setModoTemporal(e.target.value)}
+            />
+            Anio
+          </label>
+          <label>
+            <input
+              type="radio"
+              name="modoTemporal"
+              value="trimestre"
+              checked={modoTemporal === 'trimestre'}
+              onChange={(e) => setModoTemporal(e.target.value)}
+            />
+            Trimestre
+          </label>
+        </div>
+
+        {modoTemporal === 'anio' ? (
+          <>
+            <label htmlFor="anio">Anio de analisis territorial</label>
+            <select
+              id="anio"
+              value={anioSeleccionado}
+              onChange={(e) => setAnioSeleccionado(e.target.value)}
+            >
+              {anios.map((anio) => (
+                <option key={anio} value={anio}>
+                  {anio}
+                </option>
+              ))}
+            </select>
+          </>
+        ) : (
+          <>
+            <label htmlFor="fecha">Trimestre de analisis territorial</label>
+            <select
+              id="fecha"
+              value={fechaSeleccionada}
+              onChange={(e) => setFechaSeleccionada(e.target.value)}
+            >
+              {fechas.map((fecha) => (
+                <option key={fecha} value={fecha}>
+                  {fecha}
+                </option>
+              ))}
+            </select>
+          </>
+        )}
 
         <div className="kpi-row">
           <article>
-            <span>Tasa nacional</span>
-            <strong>
-              {formatPercent(
-                serieNacional.find((d) => d.fecha === fechaSeleccionada)?.tasa_desocupacion ?? null
-              )}
-            </strong>
+            <span>Tasa nacional ({etiquetaPeriodo})</span>
+            <strong>{formatPercent(tasaNacionalPeriodo)}</strong>
           </article>
           <article>
-            <span>Provincia con mayor tasa</span>
+            <span>Provincia con mayor tasa ({etiquetaPeriodo})</span>
             <strong>{maxFecha ? `${maxFecha.provincia} · ${formatPercent(maxFecha.tasa_desocupacion)}` : 'N/D'}</strong>
           </article>
           <article>
-            <span>Media provincial</span>
+            <span>Media provincial ({etiquetaPeriodo})</span>
             <strong>{formatPercent(mediaFecha)}</strong>
           </article>
         </div>
@@ -151,7 +236,7 @@ function App() {
         </article>
 
         <article className="chart-card">
-          <h2>Top 8 provincias con mayor desocupacion ({fechaSeleccionada})</h2>
+          <h2>Top 8 provincias con mayor desocupacion ({etiquetaPeriodo})</h2>
           <Plot
             data={[
               {
@@ -184,12 +269,12 @@ function App() {
                 type: 'choropleth',
                 geojson: argentinaGeo,
                 featureidkey: 'properties.nombre',
-                locations: provinciasFecha.map((d) => (d.provincia ?? '').trim()),
-                z: provinciasFecha.map((d) => {
+                locations: provinciasPeriodo.map((d) => (d.provincia ?? '').trim()),
+                z: provinciasPeriodo.map((d) => {
                   const tasa = Number(d.tasa_desocupacion);
                   return Number.isNaN(tasa) ? null : tasa * 100;
                 }),
-                customdata: provinciasFecha.map((d) => {
+                customdata: provinciasPeriodo.map((d) => {
                   const tasa = Number(d.tasa_desocupacion);
                   return Number.isNaN(tasa) ? 'Sin dato' : `${(tasa * 100).toFixed(2)}%`;
                 }),

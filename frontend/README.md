@@ -1,6 +1,6 @@
 # Frontend - Dashboard de Desocupacion (React + Plotly)
 
-Este README explica solo el funcionamiento del frontend y, en particular, como ver el cambio de graficos por trimestre.
+Este README explica solo el funcionamiento del frontend y, en particular, como cambiar la vista temporal entre anio y trimestre.
 
 ## 1. Requisitos
 
@@ -18,16 +18,26 @@ npm run dev
 
 Luego abrir la URL que muestra Vite (normalmente `http://localhost:5173`).
 
-## 3. Como cambiar los graficos por trimestre
+## 3. Como cambiar los graficos por anio o trimestre
 
-En la parte superior del dashboard hay un selector llamado **"Trimestre de analisis territorial"**.
+En la parte superior del dashboard hay un bloque de controles con dos opciones:
 
-- Al elegir una fecha (por ejemplo `2019-10-01`), se actualizan los graficos que dependen de ese corte temporal.
-- Si elegis otra fecha (por ejemplo `2023-04-01`), esos graficos se recalculan automaticamente con los datos de ese trimestre.
+- **Anio** (modo por defecto)
+- **Trimestre**
 
-### Graficos que cambian con el trimestre
+### Modo Anio
 
-- KPIs superiores (tasa nacional del trimestre, provincia con mayor tasa, media provincial)
+- Se selecciona un anio (`2019`, `2020`, `2021`, `2022`, `2023`).
+- Los graficos territoriales se calculan con **promedio anual** por provincia (promedio de los trimestres disponibles de ese anio).
+
+### Modo Trimestre
+
+- Se selecciona una fecha trimestral (por ejemplo `2019-10-01`).
+- Los graficos territoriales usan solo ese trimestre exacto.
+
+### Graficos que cambian con el periodo seleccionado
+
+- KPIs superiores (tasa nacional del periodo, provincia con mayor tasa, media provincial)
 - Top 8 provincias con mayor desocupacion
 - Mapa de desocupacion por provincia
 
@@ -41,22 +51,23 @@ En la parte superior del dashboard hay un selector llamado **"Trimestre de anali
 ## 4. Logica del frontend (resumen)
 
 - Fuente principal para el mapa y ranking: `src/data/datos_limpios.json`
-- Estado React clave: `fechaSeleccionada`
-- Filtro principal:
-  - Se toman registros donde `fecha === fechaSeleccionada`
-  - Se excluye `Nacional` para el analisis provincial
+- Estados React clave: `modoTemporal`, `anioSeleccionado`, `fechaSeleccionada`
+- Filtro principal segun modo:
+  - Modo anio: registros del anio seleccionado y promedio por provincia
+  - Modo trimestre: registros donde `fecha === fechaSeleccionada`
+  - En ambos casos se excluye `Nacional` para el analisis provincial
 - Para el mapa y barras, `tasa_desocupacion` se multiplica por `100` para mostrar porcentaje.
 
 ## 5. Nota importante sobre valores 0,00%
 
-Si una provincia muestra `0,00%`, puede ser correcto para ese trimestre.
+Si una provincia muestra `0,00%`, puede ser correcto para ese periodo.
 
 Ejemplo real:
 
 - Formosa en `2019-10-01`: `0.031` => `3.10%`
 - Formosa en `2023-04-01`: `0` => `0.00%`
 
-Por eso, siempre validar el valor contra el trimestre seleccionado.
+Por eso, siempre validar el valor contra el anio o trimestre seleccionado.
 
 ## 6. Scripts utiles
 

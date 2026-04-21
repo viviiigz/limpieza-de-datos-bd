@@ -104,6 +104,21 @@ body {
   margin-bottom: 0.45rem;
 }
 
+.time-mode-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin: 0.2rem 0 0.75rem;
+}
+
+.time-mode-row label {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  margin: 0;
+  font-weight: 500;
+}
+
 .controls-panel select {
   width: min(360px, 100%);
   border-radius: 10px;
