@@ -130,14 +130,23 @@ function App() {
 
   const estadoData = useMemo(() => normalizeEstadoData(estadoLaboral), []);
 
+  const justificationStyle = {
+    fontSize: "0.85rem",
+    color: "var(--muted)",
+    fontStyle: "italic",
+    marginBottom: "1rem",
+    borderLeft: "3px solid var(--teal)",
+    paddingLeft: "0.5rem",
+  };
+
   return (
     <div className="page">
       <header className="hero">
         <p className="eyebrow">Trabajo Practico 1 · Big Data II</p>
-        <h1>Desocupacion y Condiciones Laborales de Mujeres en Argentina</h1>
+        <h1>Desocupación y Condiciones Laborales de Mujeres en Argentina</h1>
         <p className="lead">
           Dashboard interactivo construido con React + Plotly para analizar
-          desocupacion femenina y condiciones de las jefas de hogar a partir de
+          desocupación femenina y condiciones de las jefas de hogar a partir de
           datos del INDEC y la EPH.
         </p>
         <div className="meta-grid">
@@ -156,14 +165,14 @@ function App() {
             </p>
           </article>
           <article>
-            <h3>Herramienta de visualizacion</h3>
+            <h3>Herramienta de visualización</h3>
             <p>
-              Plotly.js integrado en React para interactividad, comparacion y
+              Plotly.js integrado en React para interactividad, comparación y
               lectura exploratoria.
             </p>
           </article>
           <article>
-            <h3>Objetivo analitico</h3>
+            <h3>Objetivo analítico</h3>
             <p>
               Detectar desigualdades territoriales, educativas y ocupacionales
               en mujeres jefas de hogar.
@@ -218,7 +227,7 @@ function App() {
           </>
         ) : (
           <>
-            <label htmlFor="fecha">Trimestre de analisis territorial</label>
+            <label htmlFor="fecha">Trimestre de análisis territorial</label>
             <select
               id="fecha"
               value={fechaSeleccionada}
@@ -255,7 +264,11 @@ function App() {
 
       <section className="charts-grid">
         <article className="chart-card wide">
-          <h2>Evolucion temporal de la tasa nacional</h2>
+          <h2>Evolución temporal de la tasa nacional</h2>
+          <p style={justificationStyle}>
+            Línea temporal adecuada para observar tendencia y variación en el
+            tiempo.
+          </p>
           <Plot
             data={[
               {
@@ -281,10 +294,18 @@ function App() {
             config={{ responsive: true, displayModeBar: false }}
             style={{ width: "100%", height: "380px" }}
           />
+          <p style={justificationStyle}>
+            <strong>Representación:</strong> Variación porcentual de la
+            desocupación a lo largo de los trimestres.
+          </p>
         </article>
 
         <article className="chart-card">
-          <h2>Top 8 provincias con mayor desocupacion ({etiquetaPeriodo})</h2>
+          <h2>Top 8 provincias con mayor desocupación ({etiquetaPeriodo})</h2>
+          <p style={justificationStyle}>
+            Barras comparativas útiles para comparar provincias, rangos etarios
+            y categorías.
+          </p>
           <Plot
             data={[
               {
@@ -309,10 +330,18 @@ function App() {
             config={{ responsive: true, displayModeBar: false }}
             style={{ width: "100%", height: "370px" }}
           />
+          <p style={justificationStyle}>
+            <strong>Representación:</strong> Comparativa de las jurisdicciones
+            más afectadas.
+          </p>
         </article>
 
         <article className="chart-card">
-          <h2>Mapa de desocupacion por provincia</h2>
+          <h2>Mapa de desocupación por provincia</h2>
+          <p style={justificationStyle}>
+            Mapa coroplético que representa diferencias espaciales de forma
+            inmediata.
+          </p>
           <Plot
             data={[
               {
@@ -358,10 +387,18 @@ function App() {
             config={{ responsive: true, displayModeBar: false }}
             style={{ width: "100%", height: "370px" }}
           />
+          <p style={justificationStyle}>
+            <strong>Representación:</strong> Distribución geográfica de la
+            desocupación femenina.
+          </p>
         </article>
 
         <article className="chart-card">
           <h2>Brecha educativa en jefas de hogar</h2>
+          <p style={justificationStyle}>
+            El gráfico de dona sintetiza composiciones en un vistazo,
+            permitiendo ver la relación parte-todo de la formación académica.
+          </p>
           <Plot
             data={[
               {
@@ -380,6 +417,10 @@ function App() {
             config={{ responsive: true, displayModeBar: false }}
             style={{ width: "100%", height: "360px" }}
           />
+          <p style={justificationStyle}>
+            <strong>Representación:</strong> Distribución del nivel de
+            instrucción formal alcanzado.
+          </p>
         </article>
 
         <article className="chart-card">
@@ -429,7 +470,7 @@ function App() {
         </article>
 
         <article className="chart-card">
-          <h2>Distribucion por edades</h2>
+          <h2>Distribución por edades</h2>
           <Plot
             data={[
               {
@@ -453,7 +494,7 @@ function App() {
         </article>
 
         <article className="chart-card">
-          <h2>Categoria ocupacional de jefas de hogar</h2>
+          <h2>Categoría ocupacional de jefas de hogar</h2>
           <Plot
             data={[
               {
@@ -477,7 +518,7 @@ function App() {
         </article>
 
         <article className="chart-card">
-          <h2>Uso del tiempo por genero</h2>
+          <h2>Uso del tiempo por género</h2>
           <Plot
             data={[
               {
@@ -510,7 +551,7 @@ function App() {
       </section>
 
       <section className="report">
-        <h2>Cumplimiento de consignas del trabajo practico</h2>
+        <h2>Cumplimiento de consignas del trabajo práctico</h2>
 
         <article>
           <h3>1) Seleccion del dataset</h3>
@@ -524,14 +565,14 @@ function App() {
         </article>
 
         <article>
-          <h3>2) Representaciones visuales seleccionadas y justificacion</h3>
+          <h3>2) Representaciones visuales seleccionadas y justificación</h3>
           <ul>
             <li>
-              Linea temporal: adecuada para observar tendencia y variacion en el
+              Linea temporal: adecuada para observar tendencia y variación en el
               tiempo.
             </li>
             <li>
-              Barras comparativas: utiles para comparar provincias, rangos
+              Barras comparativas: útiles para comparar provincias, rangos
               etarios y categorias.
             </li>
             <li>
