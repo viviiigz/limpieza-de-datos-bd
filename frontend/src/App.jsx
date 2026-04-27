@@ -425,6 +425,10 @@ function App() {
 
         <article className="chart-card">
           <h2>Estado laboral real (ponderado)</h2>
+          <p>
+            Barras comparativas para contrastar categorías de ocupación
+            poblacional.
+          </p>
           <Plot
             data={[
               {
@@ -445,10 +449,18 @@ function App() {
             config={{ responsive: true, displayModeBar: false }}
             style={{ width: "100%", height: "360px" }}
           />
+          <p>
+            <strong>Representación:</strong> Condición de actividad (Ocupada,
+            Desocupada, Inactiva).
+          </p>
         </article>
 
         <article className="chart-card">
           <h2>Formalidad e informalidad</h2>
+          <p>
+            Torta y dona: sintetizan composiciones en un vistazo. Permiten ver
+            la relación parte-todo de la formalidad laboral.
+          </p>
           <Plot
             data={[
               {
@@ -467,6 +479,10 @@ function App() {
             config={{ responsive: true, displayModeBar: false }}
             style={{ width: "100%", height: "360px" }}
           />
+          <p>
+            <strong>Representación:</strong> Calidad del empleo (con o sin
+            descuento jubilatorio).
+          </p>
         </article>
 
         <article className="chart-card">
