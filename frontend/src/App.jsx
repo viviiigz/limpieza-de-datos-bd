@@ -130,40 +130,146 @@ function App() {
 
   const estadoData = useMemo(() => normalizeEstadoData(estadoLaboral), []);
 
+  const justificationStyle = {
+    fontSize: "0.85rem",
+    color: "var(--muted)",
+    fontStyle: "italic",
+    marginBottom: "1rem",
+    borderLeft: "3px solid var(--teal)",
+    paddingLeft: "0.5rem",
+  };
+
   return (
     <div className="page">
       <header className="hero">
         <p className="eyebrow">Trabajo Practico 1 · Big Data II</p>
-        <h1>Desocupacion y Condiciones Laborales de Mujeres en Argentina</h1>
+        <h1>Desocupación y Condiciones Laborales de Mujeres en Argentina</h1>
         <p className="lead">
-          Dashboard interactivo construido con React + Plotly para analizar
-          desocupacion femenina y condiciones de las jefas de hogar a partir de
+          Reporte interactivo construido con React + Plotly para analizar
+          desocupación femenina y condiciones de las jefas de hogar a partir de
           datos del INDEC y la EPH.
         </p>
         <div className="meta-grid">
           <article>
             <h3>Fuente principal</h3>
             <p>
-              INDEC - EPH (microdatos) y serie provincial de tasa de
-              desocupacion femenina.
+              INDEC - EPH (microdatos) y serie provincial.
+              <a
+                href="https://www.indec.gob.ar/"
+                target="_blank"
+                rel="noreferrer"
+                style={{ color: "var(--teal)", marginLeft: "4px" }}
+              >
+                Acceder a datos oficiales →
+              </a>
             </p>
           </article>
           <article>
-            <h3>Herramienta de visualizacion</h3>
+            <h3>Herramienta de visualización</h3>
             <p>
-              Plotly.js integrado en React para interactividad, comparacion y
+              Plotly.js integrado en React para interactividad, comparación y
               lectura exploratoria.
             </p>
           </article>
           <article>
-            <h3>Objetivo analitico</h3>
+            <h3>Objetivo analítico</h3>
             <p>
               Detectar desigualdades territoriales, educativas y ocupacionales
               en mujeres jefas de hogar.
             </p>
           </article>
+          <article>
+            <h3>Elementos del dashboard</h3>
+            <p>
+            <ul>
+            <li>
+              Jerarquia visual clara: KPIs, tendencia general y desagregados.
+            </li>
+            <li>
+              Contexto y narrativa: cada grafico responde una pregunta concreta.
+            </li>
+            <li>
+              Comparabilidad: misma codificacion de color y ejes consistentes.
+            </li>
+            <li>
+              Interaccion simple: selector temporal para lectura territorial.
+            </li>
+            <li>
+              Beneficio: mejora comprension y acelera deteccion de patrones.
+            </li>
+          </ul>
+            </p>
+          </article>
+
+
         </div>
+        
+
+        <p className="lead" style={{ 
+          marginTop: "2rem", 
+          padding: "1rem 1.5rem", 
+          borderLeft: "4px solid var(--teal)", 
+          backgroundColor: "rgba(15, 118, 110, 0.05)", // Un verde casi invisible
+          borderRadius: "0 12px 12px 0",
+          fontSize: "1rem",
+          lineHeight: "1.6"
+         }}>
+           <strong style={{ color: "var(--teal)", display: "block", marginBottom: "0.5rem", fontSize: "0.8rem", textTransform: "uppercase", letterSpacing: "0.05em" }}>
+            Resolución de Consigna: Selección del Dataset
+          </strong>
+          Se trabajó con datos públicos oficiales del INDEC. Se aplicó un proceso de curaduría sobre los microdatos de la EPH para garantizar
+          la <strong>trazabilidad metodológica</strong>. La elección permite validar la "feminización de la pobreza" con respaldo estadístico oficial.
+        </p>
       </header>
+
+<section className="report">
+        <h2>Preparacion de datos y problemas comunes detectados</h2>
+
+
+
+        <article>
+          <ul>
+            <li>
+              Despivoteo de formato ancho a largo para facilitar analisis y
+              graficos.
+            </li>
+            <li>
+              Normalizacion de nombres de provincias para consistencia
+              geografica.
+            </li>
+            <li>
+              Conversión de texto numerico a decimal y control de valores
+              faltantes.
+            </li>
+            <li>
+              Filtrado tematico: jefas de hogar mujeres en microdatos EPH.
+            </li>
+            <li>
+              Aplicacion de ponderadores para estimar cantidades reales de
+              poblacion.
+            </li>
+          </ul>
+          <p>
+            Problemas comunes: separadores inconsistentes, codificaciones
+            diferentes por variable, valores ausentes o no numericos y necesidad
+            de homologar etiquetas entre fuentes.
+          </p>
+        </article>
+
+
+
+        <article>
+          <h3>¿Por qué las visualizaciones elaboradas se podrían
+considerar efectivas para la representación de los datos estudiados?</h3>
+          <p>
+            Son efectivas porque combinan lectura temporal, espacial y
+            estructural en un mismo tablero. Esto permite pasar de una vision
+            macro (tendencia nacional) a focos puntuales (provincia, educacion,
+            formalidad, edad, ocupacion) sin perder coherencia analitica.
+          </p>
+        </article>
+      </section>
+
 
       <section className="controls-panel">
         <label>Escala temporal de analisis territorial</label>
@@ -180,7 +286,7 @@ function App() {
               checked={modoTemporal === "anio"}
               onChange={(e) => setModoTemporal(e.target.value)}
             />
-            Año
+            Anio
           </label>
           <label>
             <input
@@ -196,7 +302,7 @@ function App() {
 
         {modoTemporal === "anio" ? (
           <>
-            <label htmlFor="anio">Año de analisis territorial</label>
+            <label htmlFor="anio">Anio de analisis territorial</label>
             <select
               id="anio"
               value={anioSeleccionado}
@@ -211,7 +317,7 @@ function App() {
           </>
         ) : (
           <>
-            <label htmlFor="fecha">Trimestre de analisis territorial</label>
+            <label htmlFor="fecha">Trimestre de análisis territorial</label>
             <select
               id="fecha"
               value={fechaSeleccionada}
@@ -248,7 +354,11 @@ function App() {
 
       <section className="charts-grid">
         <article className="chart-card wide">
-          <h2>Evolucion temporal de la tasa nacional</h2>
+          <h2>Evolución temporal de la tasa nacional</h2>
+          <p style={justificationStyle}>
+            Línea temporal adecuada para observar tendencia y variación en el
+            tiempo.
+          </p>
           <Plot
             data={[
               {
@@ -274,10 +384,18 @@ function App() {
             config={{ responsive: true, displayModeBar: false }}
             style={{ width: "100%", height: "380px" }}
           />
+          <p style={justificationStyle}>
+            <strong>Representación:</strong> Variación porcentual de la
+            desocupación a lo largo de los trimestres.
+          </p>
         </article>
 
         <article className="chart-card">
-          <h2>Top 8 provincias con mayor desocupacion ({etiquetaPeriodo})</h2>
+          <h2>Top 8 provincias con mayor desocupación ({etiquetaPeriodo})</h2>
+          <p style={justificationStyle}>
+            Barras comparativas útiles para comparar provincias, rangos etarios
+            y categorías.
+          </p>
           <Plot
             data={[
               {
@@ -302,10 +420,18 @@ function App() {
             config={{ responsive: true, displayModeBar: false }}
             style={{ width: "100%", height: "370px" }}
           />
+          <p style={justificationStyle}>
+            <strong>Representación:</strong> Comparativa de las jurisdicciones
+            más afectadas.
+          </p>
         </article>
 
         <article className="chart-card">
-          <h2>Mapa de desocupacion por provincia</h2>
+          <h2>Mapa de desocupación por provincia</h2>
+          <p style={justificationStyle}>
+            Mapa coroplético que representa diferencias espaciales de forma
+            inmediata.
+          </p>
           <Plot
             data={[
               {
@@ -351,10 +477,18 @@ function App() {
             config={{ responsive: true, displayModeBar: false }}
             style={{ width: "100%", height: "370px" }}
           />
+          <p style={justificationStyle}>
+            <strong>Representación:</strong> Distribución geográfica de la
+            desocupación femenina.
+          </p>
         </article>
 
         <article className="chart-card">
           <h2>Brecha educativa en jefas de hogar</h2>
+          <p style={justificationStyle}>
+            El gráfico de dona sintetiza composiciones en un vistazo,
+            permitiendo ver la relación parte-todo de la formación académica.
+          </p>
           <Plot
             data={[
               {
@@ -373,10 +507,18 @@ function App() {
             config={{ responsive: true, displayModeBar: false }}
             style={{ width: "100%", height: "360px" }}
           />
+          <p style={justificationStyle}>
+            <strong>Representación:</strong> Distribución del nivel de
+            instrucción formal alcanzado.
+          </p>
         </article>
 
         <article className="chart-card">
           <h2>Estado laboral real (ponderado)</h2>
+          <p>
+            Barras comparativas para contrastar categorías de ocupación
+            poblacional.
+          </p>
           <Plot
             data={[
               {
@@ -397,10 +539,17 @@ function App() {
             config={{ responsive: true, displayModeBar: false }}
             style={{ width: "100%", height: "360px" }}
           />
+          <p>
+            <strong>Representación:</strong> Condición de actividad.
+          </p>
         </article>
 
         <article className="chart-card">
           <h2>Formalidad e informalidad</h2>
+          <p>
+            Torta y dona: sintetizan composiciones en un vistazo. Permiten ver
+            la relación parte-todo de la formalidad laboral.
+          </p>
           <Plot
             data={[
               {
@@ -419,10 +568,17 @@ function App() {
             config={{ responsive: true, displayModeBar: false }}
             style={{ width: "100%", height: "360px" }}
           />
+          <p>
+            <strong>Representación:</strong> Calidad del empleo (con o sin
+            descuento jubilatorio).
+          </p>
         </article>
 
         <article className="chart-card">
-          <h2>Distribucion por edades</h2>
+          <h2>Distribución por edades</h2>
+          <p>
+          Barras comparativas: útiles para identificar en qué etapa de la vida se concentra la mayor responsabilidad económica.
+          </p>
           <Plot
             data={[
               {
@@ -437,16 +593,22 @@ function App() {
               plot_bgcolor: "rgba(0,0,0,0)",
               margin: { l: 58, r: 16, t: 16, b: 86 },
               yaxis: { title: "Cantidad estimada" },
-              xaxis: { tickangle: -20 },
+              xaxis: { tickangle: 0, automargin: true },
               font: { family: "Space Grotesk, sans-serif" },
             }}
             config={{ responsive: true, displayModeBar: false }}
             style={{ width: "100%", height: "360px" }}
           />
+          <p style={justificationStyle}>
+            <strong>Representación:</strong> Concentración de la jefatura de hogar femenina según rangos etarios.
+          </p>
         </article>
 
         <article className="chart-card">
-          <h2>Categoria ocupacional de jefas ocupadas</h2>
+          <h2>Categoría ocupacional de jefas de hogar</h2>
+          <p>
+            Barras comparativas para analizar la jerarquía y el tipo de inserción laboral de las mujeres.
+          </p>
           <Plot
             data={[
               {
@@ -467,10 +629,16 @@ function App() {
             config={{ responsive: true, displayModeBar: false }}
             style={{ width: "100%", height: "360px" }}
           />
+          <p style={justificationStyle}>
+            <strong>Representación:</strong> Calidad del rol laboral (Cuentapropistas, Empleadas, Patronas)
+          </p>
         </article>
 
         <article className="chart-card">
-          <h2>Uso del tiempo por genero</h2>
+          <h2>Uso del tiempo por género</h2>
+          <p>
+          Barras agrupadas: permiten contrastar dos medidas por grupo (remunerado vs. no remunerado) para visibilizar la brecha de género en las tareas de cuidado.
+          </p>
           <Plot
             data={[
               {
@@ -499,285 +667,34 @@ function App() {
             config={{ responsive: true, displayModeBar: false }}
             style={{ width: "100%", height: "360px" }}
           />
-        </article>
-      </section>
-
-      <section className="report">
-        <h2>Cumplimiento de consignas del trabajo practico</h2>
-
-        <article>
-          <h3>1) Seleccion del dataset</h3>
-          <p>
-            Para el presente proyecto de Big Data, se desestimó el uso de
-            datasets pre-procesados o simplificados (como los disponibles en
-            Kaggle) para trabajar directamente con microdatos crudos de alcance
-            nacional y datos abiertos gubernamentales. Las fuentes seleccionadas
-            fueron trianguladas para lograr un análisis exhaustivo:
-            <li>
-              <strong>Fuente Inicial (Geoespacial):</strong> Dataset de "Tasa de
-              desocupación de jefas mujeres en hogares urbanos" extraído del
-              portal oficial
-              <br />
-              <strong>datos.argentina.gob.ar.</strong> Esta base fue fundamental
-              para establecer la línea base territorial y alimentar el mapa
-              coroplético original.
-            </li>
-            <li>
-              <strong>Base Principal (Laboral y Demográfica):</strong> Encuesta
-              Permanente de Hogares (EPH) - 3er Trimestre de 2023. Base Personas
-              (Población Urbana), provista por el Instituto Nacional de
-              Estadística y Censos (INDEC).
-            </li>
-            <li>
-              <strong>Base Complementaria (Socio-cultural):</strong> Encuesta
-              Nacional de Uso del Tiempo (ENUT) - 2021, del INDEC.
-            </li>
-          </p>
-        </article>
-
-        <article>
-          <h3>2) Representaciones visuales seleccionadas y justificacion</h3>
-          <ul>
-            <li>
-              <strong>
-                1. Evolución temporal de la tasa nacional (Gráfico de línea con
-                marcadores):
-              </strong>
-              <br />
-              Justificación: Es la representación estándar para series
-              temporales continuas, preservando el orden cronológico de manera
-              natural. Permite detectar la tendencia de la desocupación femenina
-              nacional entre 2019 y 2023.
-            </li>
-            <li>
-              <strong>
-                2. Top 8 provincias con mayor desocupación (Gráfico de barras):
-              </strong>
-              <br />
-              Justificación: Es el formato más robusto para comparar magnitudes
-              entre categorías discretas (provincias). El orden descendente
-              facilita identificar rápidamente extremos altos de vulnerabilidad.
-            </li>
-            <li>
-              <strong>
-                3. Mapa coroplético por provincia (Mapa geoespacial):
-              </strong>
-              <br />
-              Justificación: Al tener los datos un componente geográfico
-              explícito, el color por territorio es la forma más eficiente de
-              detectar patrones espaciales. Responde a la pregunta de dónde se
-              concentra el problema en el territorio nacional.
-            </li>
-            <li>
-              <strong>
-                4. Brecha educativa en jefas de hogar (Gráfico de dona):
-              </strong>
-              <br />
-              Justificación: Muestra la composición porcentual del grupo por
-              nivel educativo. Con pocas categorías, la dona ofrece una lectura
-              inmediata del peso relativo y mejora la legibilidad frente a una
-              torta tradicional en interfaces densas.
-            </li>
-            <li>
-              <strong>
-                5. Estado laboral real ponderado (Gráfico de barras):
-              </strong>
-              <br />
-              Justificación: Compara cantidades estimadas entre estados
-              laborales (ocupada, desocupada, inactiva). Soporta bien las
-              escalas de volumen y el uso de ponderadores poblacionales,
-              distinguiendo desocupación de inactividad.
-            </li>
-            <li>
-              <strong>6. Formalidad e informalidad (Gráfico de torta):</strong>
-              <br />
-              Justificación: Al ser una partición dicotómica (formal/informal),
-              la torta facilita la lectura de la proporción dominante. Introduce
-              visualmente la dimensión de precariedad laboral.
-            </li>
-            <li>
-              <strong>
-                7. Perfil demográfico y ocupacional (Distribución por edades y
-                Categoría ocupacional):
-              </strong>
-              <br />
-              Justificación: Se utilizaron barras secuenciales y nominales para
-              comparar las frecuencias. Ayuda a contextualizar las políticas
-              laborales por ciclo de vida y a interpretar la exposición a la
-              segmentación ocupacional manteniendo la legibilidad de etiquetas
-              largas.
-            </li>
-            <li>
-              <strong>8. Uso del tiempo por género (Barras agrupadas):</strong>
-              <br />
-              Justificación: Se comparan horas de trabajo remunerado y no
-              remunerado entre mujer/hombre. Las barras agrupadas exponen
-              técnicamente la doble jornada y su relación con la vulnerabilidad
-              laboral femenina mediante comparación cruzada.
-            </li>
-          </ul>
-        </article>
-
-        <article>
-          <h3>3) Preparacion de datos y problemas comunes detectados</h3>
-          <ul>
-            <li>
-              <strong>Extracción:</strong> Se descargaron archivos masivos en
-              formato .txt y .csv con cientos de miles de registros.
-            </li>
-            <li>
-              <strong>Transformación:</strong> Se procesaron los datos
-              eficientemente en memoria usando Streams de Node.js. Se filtró la
-              información y se aplicó el factor de expansión (PONDERA) para
-              proyectar la muestra a nivel nacional.
-            </li>
-            <li>
-              <strong>Carga:</strong> Los datos procesados se exportaron a un
-              formato JSON optimizado para su uso en el Frontend.
-            </li>
-          </ul>
-          <p>Problemas comunes resueltos:</p>
-          <li>
-            <strong>Delimitadores mixtos:</strong> Se programó un detector
-            dinámico para interpretar correctamente archivos que mezclaban comas
-            y puntos y comas.
-          </li>
-          <li>
-            <strong>Limpieza tipográfica:</strong> Se utilizaron expresiones
-            regulares (RegEx) para eliminar comillas residuales y espacios en
-            los datos numéricos.
-          </li>
-          <li>
-            <strong>Formatos decimales:</strong> Se estandarizó el uso de puntos
-            y comas en los números ponderadores mediante parseo y redondeo
-            matemático.
-          </li>
-          <li>
-            <strong>Corrección geoespacial:</strong> Se invirtieron las
-            coordenadas del estándar GeoJSON ([Longitud, Latitud]) al formato
-            del motor del mapa ([Latitud, Longitud]) para que el mapa del país
-            se renderizara en la orientación correcta.
-          </li>
-        </article>
-
-        <article>
-          <h3>4) Seleccion de Herramientas</h3>
-          <p>
-            Para el desarrollo del dashboard, se adoptó un ecosistema
-            tecnológico orientado al alto rendimiento para manejar grandes
-            volúmenes de datos:
-          </p>
-          <li>
-            <strong>Plotly.js (Visualización):</strong> Seleccionada por ofrecer
-            todos los gráficos necesarios en una sola librería, incluir soporte
-            nativo para mapas coropléticos (GeoJSON) y contar con alta
-            interactividad (zoom, tooltips).
-          </li>
-          <li>
-            <strong>React (Interfaz):</strong> Elegida para construir una
-            arquitectura escalable y modular basada en componentes o tarjetas
-            reutilizables.
-          </li>
-          <li>
-            <strong>Herramienta de Build (Vite):</strong> Orientada a la
-            velocidad, permite recarga en caliente y menor fricción para iterar
-            sobre los gráficos.
-          </li>
-          <li>
-            <strong>Pipeline Backend (Node.js):</strong> Genera archivos JSON
-            compatibles de forma nativa con el consumo en frontend, asegurando
-            consistencia metodológica y reproducibilidad
-          </li>
-        </article>
-
-        <article>
-          <h3>5) Elementos del reporte </h3>
-          <p>
-            La interfaz se estructuró bajo el enfoque de "Scrollytelling"
-            (narrativa guiada por el desplazamiento del usuario), integrando los
-            siguientes aspectos:
-          </p>
-          <ul>
-            <li>
-              <strong>Estructura Narrativa:</strong> La información se presenta
-              en una secuencia lógica dividida en tres actos: El Problema - La
-              Causa Oculta - Las Consecuencias Laborales.
-            </li>
-            <li>
-              <strong>Jerarquía Visual:</strong> Se priorizan tarjetas de
-              indicadores clave (KPIs) en la cabecera para destacar las
-              magnitudes más impactantes, respaldadas por gráficos detallados a
-              continuación.
-            </li>
-            <li>
-              <strong>Estética y Usabilidad:</strong> Se implementó un "Dark
-              Mode" (modo oscuro) con colores de alto contraste (morado y verde
-              esmeralda) para resaltar los datos y reducir la fatiga visual.
-            </li>
-            <li>
-              <strong>Beneficio Principal:</strong> Democratiza el acceso a los
-              datos, transformando estadísticas complejas y crudas en
-              información clara y procesable para la formulación de políticas
-              públicas y la toma de decisiones.
-            </li>
-          </ul>
-        </article>
-
-        <article>
-          <h3>7) Por que estas visualizaciones son efectivas</h3>
-          <p>
-            Son efectivas porque combinan lectura temporal, espacial y
-            estructural en un mismo tablero. Esto permite pasar de una vision
-            macro (tendencia nacional) a focos puntuales (provincia, educacion,
-            formalidad, edad, ocupacion) sin perder coherencia analitica.
+          <p style={justificationStyle}>
+            <strong>Representación:</strong> Comparativa de horas diarias dedicadas al trabajo de mercado frente al trabajo doméstico y de cuidados no remunerado.
           </p>
         </article>
       </section>
-        <section className="conclusion">
-        <div className="conclusion-inner">
-          <p className="eyebrow">Conclusión</p>
-          <h2>Una crisis invisible de tiempo y oportunidades</h2>
-          <p className="conclusion-lead">
-            La Encuesta Permanente de Hogares (EPH) expone una{" "}
-            <strong>crisis de tiempo</strong>. Los datos revelan una realidad
-            contundente: mientras que{" "}
-            <span className="conclusion-highlight">143.915 mujeres</span> se
-            encuentran desocupadas buscando empleo, el verdadero problema es
-            invisible.
-          </p>
-          <div className="conclusion-stats">
-            <article>
-              <strong>+2,8 millones</strong>
-              <span>
-                de mujeres inactivas, fuera del mercado laboral, por pura carga
-                horaria
-              </span>
-            </article>
-            <article>
-              <strong>6,5 hs</strong>
-              <span>
-                diarias de trabajo no remunerado que dedican las mujeres, frente
-                a las 3,4 hs de los varones
-              </span>
-            </article>
-            <article>
-              <strong>Primaria</strong>
-              <span>
-                es el nivel educativo predominante en el grupo, explicando la
-                persistencia de la informalidad
-              </span>
-            </article>
-          </div>
-          <p className="conclusion-closing">
-            Al sumar la desproporcionada carga de trabajo no remunerado al bajo
-            nivel educativo del grupo mayoritario, comprendemos por qué la
-            informalidad laboral sigue siendo tan alta. La tecnología nos permite
-            visualizar estos datos para entender que{" "}
-            <strong>la brecha de género es un desafío estructural</strong>, no
-            individual, que requiere políticas públicas de fondo.
-          </p>
-        </div>
-      </section>
+
+
+
+      <footer
+        style={{
+          marginTop: "2rem",
+          padding: "2rem",
+          textAlign: "center",
+          borderTop: "1px solid var(--line)",
+          color: "var(--muted)",
+          fontSize: "0.85rem",
+        }}
+      >
+        <p>
+          <strong>Observatorio de Desigualdad Estructural</strong>
+          <br />
+          Basado en la Encuesta Permanente de Hogares (EPH) - INDEC Argentina.
+          <br />
+          Los datos presentados han sido procesados mediante factores de
+          expansión (PONDERADORES) para representar estimaciones poblacionales
+          reales.
+        </p>
+      </footer>
     </div>
   );
 }
