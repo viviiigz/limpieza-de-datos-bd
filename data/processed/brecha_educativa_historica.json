@@ -1,0 +1,77 @@
+[
+  {
+    "año": 2019,
+    "nivel_educativo": "Primaria/Menos",
+    "cantidad_real": 2461114
+  },
+  {
+    "año": 2019,
+    "nivel_educativo": "Secundaria",
+    "cantidad_real": 1745605
+  },
+  {
+    "año": 2019,
+    "nivel_educativo": "Superior",
+    "cantidad_real": 1267830
+  },
+  {
+    "año": 2020,
+    "nivel_educativo": "Primaria/Menos",
+    "cantidad_real": 2458636
+  },
+  {
+    "año": 2020,
+    "nivel_educativo": "Secundaria",
+    "cantidad_real": 1831139
+  },
+  {
+    "año": 2020,
+    "nivel_educativo": "Superior",
+    "cantidad_real": 1331850
+  },
+  {
+    "año": 2021,
+    "nivel_educativo": "Primaria/Menos",
+    "cantidad_real": 2460613
+  },
+  {
+    "año": 2021,
+    "nivel_educativo": "Secundaria",
+    "cantidad_real": 1982102
+  },
+  {
+    "año": 2021,
+    "nivel_educativo": "Superior",
+    "cantidad_real": 1520311
+  },
+  {
+    "año": 2022,
+    "nivel_educativo": "Primaria/Menos",
+    "cantidad_real": 2618019
+  },
+  {
+    "año": 2022,
+    "nivel_educativo": "Secundaria",
+    "cantidad_real": 2188021
+  },
+  {
+    "año": 2022,
+    "nivel_educativo": "Superior",
+    "cantidad_real": 1489945
+  },
+  {
+    "año": 2023,
+    "nivel_educativo": "Primaria/Menos",
+    "cantidad_real": 2543286
+  },
+  {
+    "año": 2023,
+    "nivel_educativo": "Secundaria",
+    "cantidad_real": 2273610
+  },
+  {
+    "año": 2023,
+    "nivel_educativo": "Superior",
+    "cantidad_real": 1702563
+  }
+]

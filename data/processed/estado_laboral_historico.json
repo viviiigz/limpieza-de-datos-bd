@@ -1,0 +1,77 @@
+[
+  {
+    "año": 2019,
+    "condicion": "Ocupadas",
+    "cantidad_real": 2697748
+  },
+  {
+    "año": 2019,
+    "condicion": "Desocupadas (Buscan y no consiguen)",
+    "cantidad_real": 219108
+  },
+  {
+    "año": 2019,
+    "condicion": "Inactivas (No buscan por carga horaria)",
+    "cantidad_real": 2550688
+  },
+  {
+    "año": 2020,
+    "condicion": "Ocupadas",
+    "cantidad_real": 2645837
+  },
+  {
+    "año": 2020,
+    "condicion": "Desocupadas (Buscan y no consiguen)",
+    "cantidad_real": 310396
+  },
+  {
+    "año": 2020,
+    "condicion": "Inactivas (No buscan por carga horaria)",
+    "cantidad_real": 2660918
+  },
+  {
+    "año": 2021,
+    "condicion": "Ocupadas",
+    "cantidad_real": 3122829
+  },
+  {
+    "año": 2021,
+    "condicion": "Desocupadas (Buscan y no consiguen)",
+    "cantidad_real": 237509
+  },
+  {
+    "año": 2021,
+    "condicion": "Inactivas (No buscan por carga horaria)",
+    "cantidad_real": 2595916
+  },
+  {
+    "año": 2022,
+    "condicion": "Ocupadas",
+    "cantidad_real": 3294221
+  },
+  {
+    "año": 2022,
+    "condicion": "Desocupadas (Buscan y no consiguen)",
+    "cantidad_real": 170779
+  },
+  {
+    "año": 2022,
+    "condicion": "Inactivas (No buscan por carga horaria)",
+    "cantidad_real": 2824453
+  },
+  {
+    "año": 2023,
+    "condicion": "Ocupadas",
+    "cantidad_real": 3568614
+  },
+  {
+    "año": 2023,
+    "condicion": "Desocupadas (Buscan y no consiguen)",
+    "cantidad_real": 143915
+  },
+  {
+    "año": 2023,
+    "condicion": "Inactivas (No buscan por carga horaria)",
+    "cantidad_real": 2800374
+  }
+]

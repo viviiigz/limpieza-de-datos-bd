@@ -1,0 +1,52 @@
+[
+  {
+    "año": 2019,
+    "condicion": "Formal",
+    "cantidad_real": 1311635
+  },
+  {
+    "año": 2019,
+    "condicion": "Informal",
+    "cantidad_real": 749189
+  },
+  {
+    "año": 2020,
+    "condicion": "Formal",
+    "cantidad_real": 1341452
+  },
+  {
+    "año": 2020,
+    "condicion": "Informal",
+    "cantidad_real": 631554
+  },
+  {
+    "año": 2021,
+    "condicion": "Formal",
+    "cantidad_real": 1448195
+  },
+  {
+    "año": 2021,
+    "condicion": "Informal",
+    "cantidad_real": 894783
+  },
+  {
+    "año": 2022,
+    "condicion": "Formal",
+    "cantidad_real": 1545445
+  },
+  {
+    "año": 2022,
+    "condicion": "Informal",
+    "cantidad_real": 974669
+  },
+  {
+    "año": 2023,
+    "condicion": "Formal",
+    "cantidad_real": 1655152
+  },
+  {
+    "año": 2023,
+    "condicion": "Informal",
+    "cantidad_real": 1042080
+  }
+]

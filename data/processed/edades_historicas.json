@@ -1,0 +1,102 @@
+[
+  {
+    "año": 2019,
+    "rango": "14 a 29 años",
+    "cantidad_real": 535537
+  },
+  {
+    "año": 2019,
+    "rango": "30 a 45 años",
+    "cantidad_real": 1446026
+  },
+  {
+    "año": 2019,
+    "rango": "46 a 60 años",
+    "cantidad_real": 1405794
+  },
+  {
+    "año": 2019,
+    "rango": "Más de 60 años",
+    "cantidad_real": 2087192
+  },
+  {
+    "año": 2020,
+    "rango": "14 a 29 años",
+    "cantidad_real": 589451
+  },
+  {
+    "año": 2020,
+    "rango": "30 a 45 años",
+    "cantidad_real": 1674994
+  },
+  {
+    "año": 2020,
+    "rango": "46 a 60 años",
+    "cantidad_real": 1444098
+  },
+  {
+    "año": 2020,
+    "rango": "Más de 60 años",
+    "cantidad_real": 1913082
+  },
+  {
+    "año": 2021,
+    "rango": "14 a 29 años",
+    "cantidad_real": 567772
+  },
+  {
+    "año": 2021,
+    "rango": "30 a 45 años",
+    "cantidad_real": 1767365
+  },
+  {
+    "año": 2021,
+    "rango": "46 a 60 años",
+    "cantidad_real": 1596611
+  },
+  {
+    "año": 2021,
+    "rango": "Más de 60 años",
+    "cantidad_real": 2031278
+  },
+  {
+    "año": 2022,
+    "rango": "14 a 29 años",
+    "cantidad_real": 623404
+  },
+  {
+    "año": 2022,
+    "rango": "30 a 45 años",
+    "cantidad_real": 1884852
+  },
+  {
+    "año": 2022,
+    "rango": "46 a 60 años",
+    "cantidad_real": 1602489
+  },
+  {
+    "año": 2022,
+    "rango": "Más de 60 años",
+    "cantidad_real": 2185240
+  },
+  {
+    "año": 2023,
+    "rango": "14 a 29 años",
+    "cantidad_real": 691341
+  },
+  {
+    "año": 2023,
+    "rango": "30 a 45 años",
+    "cantidad_real": 2014473
+  },
+  {
+    "año": 2023,
+    "rango": "46 a 60 años",
+    "cantidad_real": 1531080
+  },
+  {
+    "año": 2023,
+    "rango": "Más de 60 años",
+    "cantidad_real": 2282565
+  }
+]
