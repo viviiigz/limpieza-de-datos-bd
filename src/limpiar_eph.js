@@ -46,14 +46,18 @@ async function procesarEPH() {
         if (ch03 === '1' && ch04 === '2') {
             totalJefas++;
 
+            const idxPondera = headers.indexOf('PONDERA');
+            const pesoStr = row[idxPondera] || row[headers.indexOf('PONDIH')] || '0';
+            const peso = Number(pesoStr) || 0;
+
             let nivel = parseInt(row[idxNIVEL_ED]);
-            if (nivel >= 1 && nivel <= 3) contadoresEducacion["Primaria/Menos"]++;
-            else if (nivel === 4 || nivel === 5) contadoresEducacion["Secundaria"]++;
-            else if (nivel === 6 || nivel === 7) contadoresEducacion["Superior"]++;
+            if (nivel >= 1 && nivel <= 3) contadoresEducacion["Primaria/Menos"] += peso;
+            else if (nivel === 4 || nivel === 5) contadoresEducacion["Secundaria"] += peso;
+            else if (nivel === 6 || nivel === 7) contadoresEducacion["Superior"] += peso;
 
             let jubilacion = row[idxPP07H]?.trim().replace(/"/g, '');
-            if (jubilacion === '1') contadoresInformalidad["Formal"]++;
-            else if (jubilacion === '2') contadoresInformalidad["Informal"]++;
+            if (jubilacion === '1') contadoresInformalidad["Formal"] += peso;
+            else if (jubilacion === '2') contadoresInformalidad["Informal"] += peso;
         }
     }
 
