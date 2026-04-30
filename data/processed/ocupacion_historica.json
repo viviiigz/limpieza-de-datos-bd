@@ -1,0 +1,82 @@
+[
+  {
+    "año": 2020,
+    "categoria": "Patrona / Empleadora",
+    "cantidad_real": 44235
+  },
+  {
+    "año": 2020,
+    "categoria": "Cuenta Propia (Autoempleo)",
+    "cantidad_real": 622133
+  },
+  {
+    "año": 2020,
+    "categoria": "Obrera / Empleada",
+    "cantidad_real": 1973006
+  },
+  {
+    "año": 2020,
+    "categoria": "Familiar sin remuneración",
+    "cantidad_real": 6463
+  },
+  {
+    "año": 2021,
+    "categoria": "Patrona / Empleadora",
+    "cantidad_real": 71699
+  },
+  {
+    "año": 2021,
+    "categoria": "Cuenta Propia (Autoempleo)",
+    "cantidad_real": 695625
+  },
+  {
+    "año": 2021,
+    "categoria": "Obrera / Empleada",
+    "cantidad_real": 2342978
+  },
+  {
+    "año": 2021,
+    "categoria": "Familiar sin remuneración",
+    "cantidad_real": 12527
+  },
+  {
+    "año": 2022,
+    "categoria": "Patrona / Empleadora",
+    "cantidad_real": 86424
+  },
+  {
+    "año": 2022,
+    "categoria": "Cuenta Propia (Autoempleo)",
+    "cantidad_real": 681988
+  },
+  {
+    "año": 2022,
+    "categoria": "Obrera / Empleada",
+    "cantidad_real": 2520114
+  },
+  {
+    "año": 2022,
+    "categoria": "Familiar sin remuneración",
+    "cantidad_real": 5695
+  },
+  {
+    "año": 2023,
+    "categoria": "Patrona / Empleadora",
+    "cantidad_real": 100784
+  },
+  {
+    "año": 2023,
+    "categoria": "Cuenta Propia (Autoempleo)",
+    "cantidad_real": 765071
+  },
+  {
+    "año": 2023,
+    "categoria": "Obrera / Empleada",
+    "cantidad_real": 2697232
+  },
+  {
+    "año": 2023,
+    "categoria": "Familiar sin remuneración",
+    "cantidad_real": 5527
+  }
+]
