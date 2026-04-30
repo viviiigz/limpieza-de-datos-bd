@@ -733,6 +733,51 @@ function App() {
           </p>
         </article>
       </section>
+        <section className="conclusion">
+        <div className="conclusion-inner">
+          <p className="eyebrow">Conclusión</p>
+          <h2>Una crisis invisible de tiempo y oportunidades</h2>
+          <p className="conclusion-lead">
+            La Encuesta Permanente de Hogares (EPH) expone una{" "}
+            <strong>crisis de tiempo</strong>. Los datos revelan una realidad
+            contundente: mientras que{" "}
+            <span className="conclusion-highlight">143.915 mujeres</span> se
+            encuentran desocupadas buscando empleo, el verdadero problema es
+            invisible.
+          </p>
+          <div className="conclusion-stats">
+            <article>
+              <strong>+2,8 millones</strong>
+              <span>
+                de mujeres inactivas, fuera del mercado laboral, por pura carga
+                horaria
+              </span>
+            </article>
+            <article>
+              <strong>6,5 hs</strong>
+              <span>
+                diarias de trabajo no remunerado que dedican las mujeres, frente
+                a las 3,4 hs de los varones
+              </span>
+            </article>
+            <article>
+              <strong>Primaria</strong>
+              <span>
+                es el nivel educativo predominante en el grupo, explicando la
+                persistencia de la informalidad
+              </span>
+            </article>
+          </div>
+          <p className="conclusion-closing">
+            Al sumar la desproporcionada carga de trabajo no remunerado al bajo
+            nivel educativo del grupo mayoritario, comprendemos por qué la
+            informalidad laboral sigue siendo tan alta. La tecnología nos permite
+            visualizar estos datos para entender que{" "}
+            <strong>la brecha de género es un desafío estructural</strong>, no
+            individual, que requiere políticas públicas de fondo.
+          </p>
+        </div>
+      </section>
     </div>
   );
 }
