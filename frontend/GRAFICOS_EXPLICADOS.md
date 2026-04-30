@@ -398,6 +398,90 @@ Este gráfico **NO depende de los controles de año/trimestre**; presenta datos 
 ### Qué demuestra
 Este gráfico muestra la **composición ocupacional de las jefas de hogar mujeres que están empleadas**, clasificadas por categoría ocupacional (trabajadora autónoma, empleada de hogar, empleada privada, empleada pública, empleadora, etc.).
 
+---
+
+## 9. Uso del Tiempo por Género
+
+### Tipo de gráfico
+Gráfico de barras agrupadas (grouped bar chart)
+
+### Por qué este gráfico es oportuno
+Las barras agrupadas permiten comparar dos o más series (por ejemplo, tiempo promedio dedicado a trabajo remunerado vs. no remunerado) dentro de la misma categoría temporal o demográfica. Para variables de tiempo (horas por día/semana) la comparación entre hombres y mujeres resulta clara y cuantitativa.
+
+### Qué demuestra
+Este gráfico muestra cómo se distribuye el tiempo entre actividades (trabajo remunerado, trabajo no remunerado, cuidados, ocio, estudio) separado por género o por rol (jefas de hogar vs. otros). Permite ver responsabilidades diferenciales que pueden explicar restricciones laborales.
+
+### Datos utilizados
+- Dataset: `uso_del_tiempo.json`
+- Datos agregados por sexo y/o rol familiar
+
+---
+
+## Relaciones entre gráficos: cómo se conectan entre sí
+
+1. **Tasa nacional (línea) ↔ Top provincias / Mapa**
+  - La serie nacional muestra la tendencia general; los gráficos territoriales (top 8 y mapa) descomponen esa tendencia espacialmente.
+  - Un pico en la tasa nacional puede estar concentrado en pocas provincias (ver Top 8) o distribuirse en varias regiones (ver mapa).
+
+2. **Brecha educativa ↔ Formalidad / Informalidad**
+  - La `brecha_educativa.json` describe la composición educativa de las jefas de hogar. Niveles educativos bajos suelen correlacionar con mayor probabilidad de empleo informal.
+  - Observación práctica: si un departamento/provincia muestra alta proporción de jefas con educación primaria o menor, y simultáneamente alta informalidad, podemos inferir que la falta de educación formal está asociada a empleos de menor calidad.
+  - Visualmente: comparar el segmento de educación inferior (dona) con el segmento informal (torta) en la misma región o subpoblación ayuda a identificar vulnerabilidades.
+
+3. **Estado laboral real (ponderado) ↔ Distribución por edades**
+  - Las cantidades ponderadas por estado laboral permiten ver la magnitud real del fenómeno (no solo proporciones muestrales).
+  - La distribución por edades ayuda a interpretar por qué hay más desocupación o inactividad (por ejemplo, mayor inactividad en edades extremas).
+
+4. **Uso del tiempo ↔ Ocupación / Formalidad**
+  - Si el `uso_del_tiempo` muestra que las mujeres, y en particular las jefas, dedican mayor cantidad de horas a trabajo no remunerado o cuidados, esto puede explicar en parte la concentración en empleos informales o la baja participación en empleos de mayor calidad.
+
+5. **Temporalidad (Año/Trimestre) ↔ Todos los gráficos territoriales**
+  - El control de período permite ver si cambios son estacionales (trimestrales) o estructurales (anuales).
+  - Ejemplo: un aumento temporal en la desocupación por temporada puede aparecer en la serie nacional pero no alterar la composición educativa (que es estructural).
+
+---
+
+## Metodología de datos y agregaciones (cómo leer los números)
+
+- **Origen**: microdatos EPH en `data/raw/` procesados por los scripts en `src/` y exportados a `data/processed/`.
+- **Ponderadores**: Cuando se presentan cantidades absolutas (estado laboral, edades, ocupación, informalidad) siempre se aplicó `PONDERA` para estimar el universo poblacional. Esto convierte recuentos muestrales en estimaciones poblacionales.
+- **Tasas**: Las tasas de desocupación (mapa, top, serie) se calculan como proporciones (población desocupada / PEA relevante) y se muestran en porcentaje.
+- **Agregación temporal**:
+  - **Modo Trimestre**: usa los datos del trimestre seleccionado.
+  - **Modo Año**: promedia los trimestres del año seleccionado para suavizar variaciones estacionales y presentar una tendencia anual.
+- **Filtros**: Muchos gráficos están filtrados a **jefas de hogar mujeres** cuando aplica (brecha educativa, estado laboral, ocupación, edades, informalidad).
+
+---
+
+## Limitaciones y advertencias
+
+- **Microdatos muestrales**: Aunque usamos `PONDERA`, las cifras son estimaciones y sujetas a error muestral.
+- **Comparaciones pequeñas**: En provincias con muestras pequeñas (pocos hogares entrevistados en el trimestre), las tasas pueden ser inestables; use promedios anuales para mayor robustez.
+- **Causa vs correlación**: Las visualizaciones muestran asociaciones (ej. educación ↔ informalidad) pero no prueban causalidad.
+- **Nulos vs ceros**: En el mapa, 'null' significa dato faltante; 0 es un valor medido. El mapa diferencia ambos (null aparece como gris / sin color).
+- **Periodo de referencia**: Verifique siempre el control Año/Trimestre para la interpretación correcta.
+
+---
+
+## Sugerencias de interpretación rápida (cómo usar el dashboard)
+
+- Para ver cambios estructurales: seleccione `Año` y compare años consecutivos.
+- Para analizar shocks estacionales: elija `Trimestre` y compare trimestres adyacentes.
+- Para entender calidad del empleo: combine el gráfico de `Formalidad/Informalidad` con `Brecha educativa` y `Uso del tiempo`.
+- Para priorizar intervención territorial: mire el `Mapa` y el `Top 8` juntos (mapa da contexto espacial; top 8 muestra magnitudes comparables).
+- Para entender quiénes están afectados: combine `Distribución por edades` y `Estado laboral real`.
+
+---
+
+## Preguntas frecuentes rápidas
+
+- **¿Por qué algunos gráficos usan porcentajes y otros números absolutos?**
+  - Las tasas son porcentajes (desocupación) porque comparan partes relativas. Los estados laborales y ocupacionales se muestran en números ponderados para entender magnitud.
+
+- **¿Por qué usamos PONDERA siempre que es posible?**
+  - Sin ponderadores, los recuentos muestrales subestiman o sobredimensionan la realidad poblacional. `PONDERA` nos permite estimar la población real.
+
+
 ### Descripción detallada
 - **Eje X**: Categorías ocupacionales (Autónoma, Empleada de hogar, Empleada privada, Empleada pública, Empleadora, etc.)
 - **Eje Y**: Cantidad estimada de jefas en cada categoría
